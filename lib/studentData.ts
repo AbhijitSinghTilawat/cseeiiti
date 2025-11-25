@@ -1,6 +1,7 @@
-// फ़ाइल: /lib/studentData.ts
- 
-export const allStudentsData = {
+// lib/studentData.ts
+import type { Student } from "@/types/student.types";
+
+export const allStudentsData: Record<string, Student[]> = {
     '2022': [
   { id: '220001001', name: 'AADISH JAIN', imageUrl: '/btech/2022/220001001.jpg' },
   { id: '220001002', name: 'ABHINAV GANGIL', imageUrl: '/btech/2022/220001002.jpg' },
@@ -353,3 +354,5 @@ export const allStudentsData = {
 ],
     // ... बाकी सालों का डेटा
 };
+
+export const allAlumniData = allStudentsData;
