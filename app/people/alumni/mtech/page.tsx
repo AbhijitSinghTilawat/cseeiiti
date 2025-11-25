@@ -3,10 +3,22 @@
 import React, { useState } from "react";
 import { allAlumniData } from "@/lib/alumniData";
 
-/**
- * Small client-side image component that uses an onError handler safely
- * (must be in a Client Component).
- */
+/** Normalize image path: add leading slash + encode spaces/brackets */
+function normalizeImgPath(raw?: string, fallback = "/alumini/default-avatar.jpg") {
+  if (!raw) return fallback;
+
+  // Ensure leading slash
+  const withLeading = raw.startsWith("/") ? raw : `/${raw}`;
+
+  // Encode URI (fix spaces, parentheses, etc.)
+  try {
+    return encodeURI(withLeading);
+  } catch {
+    return fallback;
+  }
+}
+
+/** Client-side fallback image component */
 function ImageWithFallback({ src, alt, className, fallback }) {
   const [currentSrc, setCurrentSrc] = useState(src || fallback);
 
@@ -15,7 +27,7 @@ function ImageWithFallback({ src, alt, className, fallback }) {
       src={currentSrc}
       alt={alt}
       className={className}
-      onError={() => {
+      onError={(e) => {
         if (currentSrc !== fallback) setCurrentSrc(fallback);
       }}
     />
@@ -24,8 +36,6 @@ function ImageWithFallback({ src, alt, className, fallback }) {
 
 export default function GraduatedMTechPage() {
   const alumni = allAlumniData.graduatedMTech || [];
-
-  // Put a default fallback image file at: public/alumini/default-avatar.jpg
   const FALLBACK = "/alumini/default-avatar.jpg";
 
   return (
@@ -33,17 +43,27 @@ export default function GraduatedMTechPage() {
       <h1 className="text-3xl font-bold text-blue-900">Graduated MTech Alumni</h1>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mt-8">
-        {alumni.map((person) => {
-          // support multiple possible fields used across your data
-          const src = person.imageUrl || person.img || person.image || FALLBACK;
+        {alumni.map((person, index) => {
+          const rawSrc =
+            person.imageUrl ||
+            person.img ||
+            person.image ||
+            FALLBACK;
+
+          const imgSrc = normalizeImgPath(rawSrc, FALLBACK);
+
+          const keyValue =
+            person.rollno ||
+            person.id ||
+            `${person.name}-${index}`;
 
           return (
             <div
-              key={person.rollno}
+              key={keyValue}
               className="bg-white shadow-lg rounded-xl p-4 text-center border border-gray-200"
             >
               <ImageWithFallback
-                src={src}
+                src={imgSrc}
                 fallback={FALLBACK}
                 alt={person.name || "Alumni"}
                 className="w-32 h-32 mx-auto rounded-full object-cover"
@@ -51,25 +71,30 @@ export default function GraduatedMTechPage() {
 
               <h3 className="font-bold mt-4 text-lg">{person.name}</h3>
 
-              <p className="text-sm text-gray-700 mt-1">
-                <span className="font-semibold">Roll No:</span> {person.rollno}
-              </p>
+              {person.rollno && (
+                <p className="text-sm text-gray-700 mt-1">
+                  <span className="font-semibold">Roll No:</span> {person.rollno}
+                </p>
+              )}
 
               {person.specialization && (
                 <p className="text-sm text-gray-700 mt-1">
-                  <span className="font-semibold">Specialization:</span> {person.specialization}
+                  <span className="font-semibold">Specialization:</span>{" "}
+                  {person.specialization}
                 </p>
               )}
 
               {person.supervisor && (
                 <p className="text-sm text-gray-700 mt-1">
-                  <span className="font-semibold">Supervisor:</span> {person.supervisor}
+                  <span className="font-semibold">Supervisor:</span>{" "}
+                  {person.supervisor}
                 </p>
               )}
 
               {person.yearOfGraduation && (
                 <p className="text-sm text-gray-700 mt-1">
-                  <span className="font-semibold">Graduation Year:</span> {person.yearOfGraduation}
+                  <span className="font-semibold">Graduation Year:</span>{" "}
+                  {person.yearOfGraduation}
                 </p>
               )}
 

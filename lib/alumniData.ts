@@ -734,1011 +734,1119 @@ export const allAlumniData = {
   // more years...
   graduatedPhD: [
     {
-  name: "Jaya Thomas",
-  supervisor: "Prof. Narendra S Chaudhari",
-  img: "/alumini/APhd/1010103.jpg",
-  profileLink: "https://www.linkedin.com/in/jaya-thomas-05292016/",
-  thesisTitle: "Approaches for Cutting Stock and Strip Packing Problems",
-  yearOfGraduation: "2014",
-  rollno: "phd1010103",
-},
-{
-  name: "Neetesh Saxena",
-  supervisor: "Prof. Narendra S Chaudhari",
-  img: "/alumini/APhd/11110101.jpg",
-  profileLink: "https://www.linkedin.com/in/neeteshsaxena/",
-  thesisTitle: "Authentication and Message Security in Cellular Networks",
-  yearOfGraduation: "Jan 2015",
-  rollno: "phd11110101",
-},
-{
-  name: "Vipul Kumar Mishra",
-  supervisor: "Dr. Anirban Sengupta",
-  img: "/alumini/APhd/12120102.jpg",
-  profileLink: "https://www.linkedin.com/in/vipul-mishra-7bb43953/",
-  thesisTitle:
-    "Multi-Objective Design Space Exploration in High Level Synthesis for Application Specific Computing",
-  yearOfGraduation: "July 2015",
-  rollno: "phd12120102",
-},
-{
-  name: "Arpit Bharadwaj",
-  supervisor: "Prof. Aruna Tiwari",
-  img: "/alumini/APhd/12110102.jpg",
-  profileLink: "https://www.linkedin.com/in/arpit-bhardwaj-a3815361/",
-  thesisTitle:
-    "Investigation in Tree based Genetic Programming for Data Classification",
-  yearOfGraduation: "December 2015",
-  rollno: "phd12110102",
-},
-{
-  name: "Saumya Bhadauria",
-  supervisor: "Dr. Anirban Sengupta",
-  img: "/alumini/APhd/1301101005.jpg",
-  profileLink: "https://www.linkedin.com/in/saumya-bhadauria-4a44843b/",
-  thesisTitle:
-    "Low Cost Fault Reliability and Trojan Security Aware High Level Synthesis for Application Specific Datapath Processors",
-  yearOfGraduation: "April 2016",
-  rollno: "phd1301101005",
-},
-{
-  name: "Neha Bharill",
-  supervisor: "Prof. Aruna Tiwari",
-  img: "/alumini/APhd/12120103.jpg",
-  profileLink: "https://www.linkedin.com/in/neha-bharill-a693436a/",
-  thesisTitle: "Supervised and Unsupervised Learning",
-  yearOfGraduation: "Jan 2018",
-  rollno: "phd12120103",
-},
-{
-  name: "Robin Singh Bhadoria",
-  supervisor: "Dr. Amod C Umarikar (EE), Prof. Narendra S Chaudhari",
-  img: "/alumini/APhd/1301201005.jpg",
-  profileLink:
-    "https://www.linkedin.com/in/dr-robin-singh-bhadoria-569214b6/",
-  thesisTitle:
-    "Assessment of Data and Interfacing of Service-Oriented Systems with Sensors",
-  yearOfGraduation: "Jan 2018",
-  rollno: "phd1301201005",
-},
-{
-  name: "Tanveer Ahmed",
-  supervisor: "Prof. Abhishek Srivastava",
-  img: "/alumini/APhd/12120101.jpg",
-  profileLink: "https://www.linkedin.com/in/tanveer-ahmed-2882a22b/",
-  thesisTitle:
-    "Understanding and Evaluating Human Behavior: An Application of Psychology and Machine Learning",
-  yearOfGraduation: "August 2018",
-  rollno: "phd12120101",
-},
-{
-  name: "Om Prakash Patel",
-  supervisor: "Prof. Aruna Tiwari",
-  img: "/alumini/APhd/1301201003.jpg",
-  profileLink: "https://www.linkedin.com/in/",
-  thesisTitle:
-    "Investigations in Quantum based Neural Network Learning Algorithms",
-  yearOfGraduation: "October 2018",
-  rollno: "phd1301201003",
-},
-{
-  name: "Ashish Jain",
-  supervisor: "Prof. Narendra S Chaudhari",
-  img: "/alumini/APhd/11120101.jpg",
-  profileLink: "https://www.linkedin.com/in/dr-ashish-jain-29345846/",
-  thesisTitle:
-    "Investigations in Metaheuristic Techniques with Application to Cryptology",
-  yearOfGraduation: "October 2018",
-  rollno: "phd11120101",
-},
-{
-  name: "Prakash Chandra Sharma",
-  supervisor: "Prof. Narendra S Chaudhari",
-  img: "/alumini/APhd/1010104.jpg",
-  profileLink: "https://www.linkedin.com/in/",
-  thesisTitle:
-    "Analysis of Graph Coloring Problem Based on Satisfiability and Maximal Independent Set",
-  yearOfGraduation: "October 2018",
-  rollno: "phd1010104",
-},
-{
-  name: "Nikhil Tripathi",
-  supervisor: "Dr. Neminath Hubballi",
-  img: "/alumini/APhd/1401101002.jpg",
-  profileLink: "https://nikhiltripathi.in/",
-  thesisTitle:
-    "Novel Application Layer Denial of Service Attacks and Detection",
-  yearOfGraduation: "January 2019",
-  rollno: "phd1401101002",
-},
-{
-  name: "Dipanjan Roy",
-  supervisor: "Dr. Anirban Sengupta",
-  img: "/alumini/APhd/1501201007.jpg",
-  profileLink: "https://in.linkedin.com/in/dipanjan-roy",
-  thesisTitle: "Hardware Security and IP Core Protection of CE Systems",
-  yearOfGraduation: "January 2019",
-  rollno: "phd1501201007",
-},
-{
-  name: "Rakesh Kumar Sahu",
-  supervisor: "Prof. Narendra S Chaudhari",
-  img: "/alumini/APhd/11120103.jpg",
-  profileLink: "https://in.linkedin.com/in/rakesh-sahu-98a26a61",
-  thesisTitle:
-    "Efficient Energy Aware Routing Protocol for Mobile Ad hoc Network",
-  yearOfGraduation: "February 2019",
-  rollno: "phd11120103",
-},
-{
-  name: "Piyush Joshi",
-  supervisor: "Dr. Surya Prakash",
-  img: "/alumini/APhd/1301101004.jpg",
-  profileLink: "https://in.linkedin.com/in/piyush-joshi-665a0560",
-  thesisTitle:
-    "No-reference and No-training based Image Quality Assessment and Enhancement",
-  yearOfGraduation: "February 2019",
-  rollno: "phd1301101004",
-},
-{
-  name: "Rudresh Dwivedi",
-  supervisor: "Dr. Somnath Dey",
-  img: "/alumini/APhd/1301201006.jpg",
-  profileLink:
-    "https://www.linkedin.com/in/dr-rudresh-dwivedi-73333b53/",
-  thesisTitle:
-    "Unimodal and Multimodal Biometric Verification using Iris & Fingerprint Templates",
-  yearOfGraduation: "February 2019",
-  rollno: "phd1301201006",
-},
-{
-  name: "Deepak Kachave",
-  supervisor: "Dr. Anirban Sengupta",
-  img: "/alumini/APhd/1501101009.jpg",
-  profileLink: "https://in.linkedin.com/in/dr-deepak-kachave-83a16074",
-  thesisTitle: "Transient Fault Reliability and Security of IP cores",
-  yearOfGraduation: "April 2019",
-  rollno: "phd1501101009",
-},
-{
-  name: "Shruti Bhillare",
-  supervisor:
-    "Prof. Narendra S Chaudhari & Dr. Vivek Kanhangad (EE)",
-  img: "/alumini/APhd/12110103.jpg",
-  profileLink: "https://in.linkedin.com/in/shruti-bhilare-6276222b",
-  thesisTitle:
-    "Presentation Attack Detection and Matching Techniques for Hand-based Biometrics",
-  yearOfGraduation: "May 2019",
-  rollno: "phd12110103",
-},
-{
-  name: "Syed Sadaf Ali",
-  supervisor: "Dr. Surya Prakash",
-  img: "/alumini/APhd/1301101006.jpg",
-  profileLink: "https://in.linkedin.com/in/syed-sadaf-ali-5a8286177",
-  thesisTitle:
-    "A Few Techniques for Fingerprint Template Protection",
-  yearOfGraduation: "July 2019",
-  rollno: "phd1301101006",
-},
-{
-  name: "Rajat Saxena",
-  supervisor: "Dr. Somnath Dey",
-  img: "/alumini/APhd/11120104.jpg",
-  profileLink: "https://in.linkedin.com/in/rajat-saxena-0bab8057",
-  thesisTitle:
-    "Efficient Authentication, Data Auditing, and Availability in Cloud Computing",
-  yearOfGraduation: "September 2019",
-  rollno: "phd11120104",
-},
-{
-  name: "Mayank Swarnkar",
-  supervisor: "Dr. Neminath Hubballi",
-  img: "/alumini/APhd/1401101001.jpg",
-  profileLink: "https://in.linkedin.com/in/mayank-swarnkar-48b27730",
-  thesisTitle:
-    "Deep Packet Inspection Applications for Traffic Classification",
-  yearOfGraduation: "September 2019",
-  rollno: "phd1401101001",
-},
-{
-  name: "Rajendra Choudhary",
-  supervisor: "Prof. Kapil Ahuja",
-  img: "/alumini/APhd/1301201004.jpg",
-  profileLink:
-    "https://www.linkedin.com/in/rajendra-choudhary-7458b5217/",
-  thesisTitle:
-    "Stability Analysis of Inexact Linear Solves in Model Order Reduction",
-  yearOfGraduation: "October 2019",
-  rollno: "phd1301201004",
-},
-{
-  name: "Ram Prakash Sharma",
-  supervisor: "Dr. Somnath Dey",
-  img: "/alumini/APhd/1501201003.jpg",
-  profileLink:
-    "https://www.linkedin.com/in/ram-prakash-sharma-b3197a78/",
-  thesisTitle:
-    "Assessment of Fingerprint Quality and Liveness Detection",
-  yearOfGraduation: "January 2020",
-  rollno: "phd1501201003",
-},
-{
-  name: "Rohit Verma",
-  supervisor: "Prof. Abhishek Srivastava",
-  img: "/alumini/APhd/12110101.jpg",
-  profileLink: "https://www.linkedin.com/in/rohitsv/",
-  thesisTitle:
-    "Service-Oriented Architecture for Constrained Environments",
-  yearOfGraduation: "January 2020",
-  rollno: "phd12110101",
-},
-{
-  name: "G. Iyyakutti Iyappan",
-  supervisor: "Dr. Surya Prakash",
-  img: "/alumini/APhd/1501101002.jpg",
-  profileLink:
-    "https://www.linkedin.com/in/iyyakutti-iyappan-ganapathi-156992165/",
-  thesisTitle: "3D Ear based Human Recognition",
-  yearOfGraduation: "May 2020",
-  rollno: "phd1501101002",
-},
-{
-  name: "Chandan Gautam",
-  supervisor: "Prof. Aruna Tiwari",
-  img: "/alumini/APhd/1501101001.jpg",
-  profileLink:
-    "https://www.linkedin.com/in/chandan-gautam-29404576/",
-  thesisTitle:
-    "One-class Classification via Kernel-based Learning",
-  yearOfGraduation: "May 2020",
-  rollno: "phd1501101001",
-},
-{
-  name: "Animesh Chaturvedi",
-  supervisor: "Prof. Aruna Tiwari",
-  img: "/alumini/APhd/1501101006.jpg",
-  profileLink:
-    "https://www.linkedin.com/in/animeshchaturvedi88/",
-  thesisTitle:
-    "Data Mining & Learning of Complex Evolving Systems",
-  yearOfGraduation: "May 2020",
-  rollno: "phd1501101006",
-},
-{
-  name: "Dheeraj Rane",
-  supervisor: "Prof. Abhishek Srivastava",
-  img: "/alumini/APhd/11120102.jpg",
-  profileLink: "https://www.linkedin.com/in/ranedheeraj/",
-  thesisTitle:
-    "SLA Driven Performance Optimization in Cloud Computing",
-  yearOfGraduation: "May 2020",
-  rollno: "phd11120102",
-},
-{
-  name: "Pramod Mane",
-  supervisor: "Prof. Kapil Ahuja",
-  img: "/alumini/APhd/12110104.jpg",
-  profileLink: "https://www.linkedin.com/in/pramod-mane-46015924/",
-  thesisTitle: "Game Theoretic Models in Social Cloud",
-  yearOfGraduation: "May 2020",
-  rollno: "phd12110104",
-},
-{
-  name: "Raj Kumar Jain",
-  supervisor: "Prof. Narendra S Chaudhari",
-  img: "/alumini/APhd/1010102.jpg",
-  profileLink: "https://www.linkedin.com/in/jainrajkumar/",
-  thesisTitle:
-    "Approaches To Minimum Sum Of Diameter And Radii Clustering",
-  yearOfGraduation: "Dec 2020",
-  rollno: "phd1010102",
-},
-{
-  name: "Navneet Pratap Singh",
-  supervisor: "Prof. Kapil Ahuja",
-  img: "/alumini/APhd/1301201002.jpg",
-  profileLink:
-    "https://www.linkedin.com/in/dr-navneet-pratap-singh-a946b5216/",
-  thesisTitle:
-    "Stable Linear Solves with Preconditioner Updates for Model Reduction",
-  yearOfGraduation: "Mar 2021",
-  rollno: "phd1301201002",
-},
-{
-  name: "Aaditya Prakash Chouhan",
-  supervisor: "Dr. Gourinath Banda",
-  img: "/alumini/APhd/1501201006.jpg",
-  profileLink: "http://people.iiti.ac.in/~phd1501201006",
-  thesisTitle:
-    "Intelligent Transportation System: Algorithms & Formal Verification",
-  yearOfGraduation: "Apr 2021",
-  rollno: "phd1501201006",
-},
-{
-  name: "Aditya Shastri",
-  supervisor: "Prof. Kapil Ahuja",
-  img: "/alumini/APhd/1501201001.jpg",
-  profileLink:
-    "https://in.linkedin.com/in/dr-aditya-shastri-3828b91b5",
-  thesisTitle:
-    "Novel ML Algorithms for Genotype Clustering & Cancer Classification",
-  yearOfGraduation: "Jul 2021",
-  rollno: "phd1501201001",
-},
-{
-  name: "Preeti Jha",
-  supervisor: "Prof. Aruna Tiwari",
-  img: "/alumini/APhd/1801201006.jpg",
-  profileLink: "https://www.linkedin.com/in/preeti-jha-5a7b2054/",
-  thesisTitle:
-    "Design of Scalable Fuzzy Clustering Algorithms for Genomics Data",
-  yearOfGraduation: "Dec 2021",
-  rollno: "phd1801201006",
-},
-{
-  name: "Mahendra Rathor",
-  supervisor: "Dr. Anirban Sengupta",
-  img: "/alumini/APhd/1801201004.jpg",
-  profileLink:
-    "https://in.linkedin.com/in/mahendra-rathor-6b56937a",
-  thesisTitle:
-    "Hardware (IP) Security for DSP and Multimedia Applications",
-  yearOfGraduation: "Mar 2022",
-  rollno: "phd1801201004",
-},
-{
-  name: "Rohit Agrawal",
-  supervisor: "Prof. Kapil Ahuja",
-  img: "/alumini/APhd/1501201004.jpg",
-  profileLink: "https://www.linkedin.com/in/rohit-agrawal-iiti/",
-  thesisTitle:
-    "Novel Optimization Algorithms for Steganography and Chip Routing",
-  yearOfGraduation: "Jul 2022",
-  rollno: "phd1501201004",
-},
-{
-  name: "Lokendra Birla",
-  supervisor: "Dr. Puneet Gupta",
-  img: "/alumini/APhd/1901201001.jpg",
-  profileLink: "https://www.linkedin.com/in/lokendrabirla/",
-  thesisTitle:
-    "Importance of remote-PPG for Securing Face Analytic Systems",
-  yearOfGraduation: "Sep 2022",
-  rollno: "phd1901201001",
-},
-{
-  name: "Vikas Chauhan",
-  supervisor: "Dr. Aruna Tiwari",
-  img: "/alumini/APhd/1701101006.jpg",
-  profileLink: "https://www.linkedin.com/in/vikas-chauhan-32209033/",
-  thesisTitle:
-    "Multi-label Classification using Non-Iterative & Deep Learning",
-  yearOfGraduation: "Dec 2022",
-  rollno: "phd1701101006",
-},
-{
-  name: "Akhilesh Mohan Srivastava",
-  supervisor: "Dr. Surya Prakash",
-  img: "/alumini/APhd/1701101001.jpg",
-  profileLink:
+      id: "phd1010103",
+      name: "Jaya Thomas",
+      supervisor: "Prof. Narendra S Chaudhari",
+      img: "/alumini/APhd/1010103.jpg",
+      profileLink: "https://www.linkedin.com/in/jaya-thomas-05292016/",
+      thesisTitle: "Approaches for Cutting Stock and Strip Packing Problems",
+      yearOfGraduation: "2014",
+      rollno: "phd1010103",
+    },
+    {
+      id: "phd11110101",
+      name: "Neetesh Saxena",
+      supervisor: "Prof. Narendra S Chaudhari",
+      img: "/alumini/APhd/11110101.jpg",
+      profileLink: "https://www.linkedin.com/in/neeteshsaxena/",
+      thesisTitle: "Authentication and Message Security in Cellular Networks",
+      yearOfGraduation: "Jan 2015",
+      rollno: "phd11110101",
+    },
+    {
+      id: "phd12120102",
+      name: "Vipul Kumar Mishra",
+      supervisor: "Dr. Anirban Sengupta",
+      img: "/alumini/APhd/12120102.jpg",
+      profileLink: "https://www.linkedin.com/in/vipul-mishra-7bb43953/",
+      thesisTitle:
+        "Multi-Objective Design Space Exploration in High Level Synthesis for Application Specific Computing",
+      yearOfGraduation: "July 2015",
+      rollno: "phd12120102",
+    },
+    {
+      id: "phd12110102",
+      name: "Arpit Bharadwaj",
+      supervisor: "Prof. Aruna Tiwari",
+      img: "/alumini/APhd/12110102.jpg",
+      profileLink: "https://www.linkedin.com/in/arpit-bhardwaj-a3815361/",
+      thesisTitle:
+        "Investigation in Tree based Genetic Programming for Data Classification",
+      yearOfGraduation: "December 2015",
+      rollno: "phd12110102",
+    },
+    {
+      id: "phd1301101005",
+      name: "Saumya Bhadauria",
+      supervisor: "Dr. Anirban Sengupta",
+      img: "/alumini/APhd/1301101005.jpg",
+      profileLink: "https://www.linkedin.com/in/saumya-bhadauria-4a44843b/",
+      thesisTitle:
+        "Low Cost Fault Reliability and Trojan Security Aware High Level Synthesis for Application Specific Datapath Processors",
+      yearOfGraduation: "April 2016",
+      rollno: "phd1301101005",
+    },
+    {
+      id: "phd12120103",
+      name: "Neha Bharill",
+      supervisor: "Prof. Aruna Tiwari",
+      img: "/alumini/APhd/12120103.jpg",
+      profileLink: "https://www.linkedin.com/in/neha-bharill-a693436a/",
+      thesisTitle: "Supervised and Unsupervised Learning",
+      yearOfGraduation: "Jan 2018",
+      rollno: "phd12120103",
+    },
+    {
+      id: "phd1301201005",
+      name: "Robin Singh Bhadoria",
+      supervisor: "Dr. Amod C Umarikar (EE), Prof. Narendra S Chaudhari",
+      img: "/alumini/APhd/1301201005.jpg",
+      profileLink:
+        "https://www.linkedin.com/in/dr-robin-singh-bhadoria-569214b6/",
+      thesisTitle:
+        "Assessment of Data and Interfacing of Service-Oriented Systems with Sensors",
+      yearOfGraduation: "Jan 2018",
+      rollno: "phd1301201005",
+    },
+    {
+      id: "phd12120101",
+      name: "Tanveer Ahmed",
+      supervisor: "Prof. Abhishek Srivastava",
+      img: "/alumini/APhd/12120101.jpg",
+      profileLink: "https://www.linkedin.com/in/tanveer-ahmed-2882a22b/",
+      thesisTitle:
+        "Understanding and Evaluating Human Behavior: An Application of Psychology and Machine Learning",
+      yearOfGraduation: "August 2018",
+      rollno: "phd12120101",
+    },
+    {
+      id: "phd1301201003",
+      name: "Om Prakash Patel",
+      supervisor: "Prof. Aruna Tiwari",
+      img: "/alumini/APhd/1301201003.jpg",
+      profileLink: "https://www.linkedin.com/in/",
+      thesisTitle:
+        "Investigations in Quantum based Neural Network Learning Algorithms",
+      yearOfGraduation: "October 2018",
+      rollno: "phd1301201003",
+    },
+    {
+      id: "phd11120101",
+      name: "Ashish Jain",
+      supervisor: "Prof. Narendra S Chaudhari",
+      img: "/alumini/APhd/11120101.jpg",
+      profileLink: "https://www.linkedin.com/in/dr-ashish-jain-29345846/",
+      thesisTitle:
+        "Investigations in Metaheuristic Techniques with Application to Cryptology",
+      yearOfGraduation: "October 2018",
+      rollno: "phd11120101",
+    },
+    {
+      id: "phd1010104",
+      name: "Prakash Chandra Sharma",
+      supervisor: "Prof. Narendra S Chaudhari",
+      img: "/alumini/APhd/1010104.jpg",
+      profileLink: "https://www.linkedin.com/in/",
+      thesisTitle:
+        "Analysis of Graph Coloring Problem Based on Satisfiability and Maximal Independent Set",
+      yearOfGraduation: "October 2018",
+      rollno: "phd1010104",
+    },
+    {
+      id: "phd1401101002",
+      name: "Nikhil Tripathi",
+      supervisor: "Dr. Neminath Hubballi",
+      img: "/alumini/APhd/1401101002.jpg",
+      profileLink: "https://nikhiltripathi.in/",
+      thesisTitle:
+        "Novel Application Layer Denial of Service Attacks and Detection",
+      yearOfGraduation: "January 2019",
+      rollno: "phd1401101002",
+    },
+    {
+      id: "phd1501201007",
+      name: "Dipanjan Roy",
+      supervisor: "Dr. Anirban Sengupta",
+      img: "/alumini/APhd/1501201007.jpg",
+      profileLink: "https://in.linkedin.com/in/dipanjan-roy",
+      thesisTitle: "Hardware Security and IP Core Protection of CE Systems",
+      yearOfGraduation: "January 2019",
+      rollno: "phd1501201007",
+    },
+    {
+      id: "phd11120103",
+      name: "Rakesh Kumar Sahu",
+      supervisor: "Prof. Narendra S Chaudhari",
+      img: "/alumini/APhd/11120103.jpg",
+      profileLink: "https://in.linkedin.com/in/rakesh-sahu-98a26a61",
+      thesisTitle:
+        "Efficient Energy Aware Routing Protocol for Mobile Ad hoc Network",
+      yearOfGraduation: "February 2019",
+      rollno: "phd11120103",
+    },
+    {
+      id: "phd1301101004",
+      name: "Piyush Joshi",
+      supervisor: "Dr. Surya Prakash",
+      img: "/alumini/APhd/1301101004.jpg",
+      profileLink: "https://in.linkedin.com/in/piyush-joshi-665a0560",
+      thesisTitle:
+        "No-reference and No-training based Image Quality Assessment and Enhancement",
+      yearOfGraduation: "February 2019",
+      rollno: "phd1301101004",
+    },
+    {
+      id: "phd1301201006",
+      name: "Rudresh Dwivedi",
+      supervisor: "Dr. Somnath Dey",
+      img: "/alumini/APhd/1301201006.jpg",
+      profileLink:
+        "https://www.linkedin.com/in/dr-rudresh-dwivedi-73333b53/",
+      thesisTitle:
+        "Unimodal and Multimodal Biometric Verification using Iris & Fingerprint Templates",
+      yearOfGraduation: "February 2019",
+      rollno: "phd1301201006",
+    },
+    {
+      id: "phd1501101009",
+      name: "Deepak Kachave",
+      supervisor: "Dr. Anirban Sengupta",
+      img: "/alumini/APhd/1501101009.jpg",
+      profileLink: "https://in.linkedin.com/in/dr-deepak-kachave-83a16074",
+      thesisTitle: "Transient Fault Reliability and Security of IP cores",
+      yearOfGraduation: "April 2019",
+      rollno: "phd1501101009",
+    },
+    {
+      id: "phd12110103",
+      name: "Shruti Bhillare",
+      supervisor:
+        "Prof. Narendra S Chaudhari & Dr. Vivek Kanhangad (EE)",
+      img: "/alumini/APhd/12110103.jpg",
+      profileLink: "https://in.linkedin.com/in/shruti-bhilare-6276222b",
+      thesisTitle:
+        "Presentation Attack Detection and Matching Techniques for Hand-based Biometrics",
+      yearOfGraduation: "May 2019",
+      rollno: "phd12110103",
+    },
+    {
+      id: "phd1301101006",
+      name: "Syed Sadaf Ali",
+      supervisor: "Dr. Surya Prakash",
+      img: "/alumini/APhd/1301101006.jpg",
+      profileLink: "https://in.linkedin.com/in/syed-sadaf-ali-5a8286177",
+      thesisTitle:
+        "A Few Techniques for Fingerprint Template Protection",
+      yearOfGraduation: "July 2019",
+      rollno: "phd1301101006",
+    },
+    {
+      id: "phd11120104",
+      name: "Rajat Saxena",
+      supervisor: "Dr. Somnath Dey",
+      img: "/alumini/APhd/11120104.jpg",
+      profileLink: "https://in.linkedin.com/in/rajat-saxena-0bab8057",
+      thesisTitle:
+        "Efficient Authentication, Data Auditing, and Availability in Cloud Computing",
+      yearOfGraduation: "September 2019",
+      rollno: "phd11120104",
+    },
+    {
+      id: "phd1401101001",
+      name: "Mayank Swarnkar",
+      supervisor: "Dr. Neminath Hubballi",
+      img: "/alumini/APhd/1401101001.jpg",
+      profileLink: "https://in.linkedin.com/in/mayank-swarnkar-48b27730",
+      thesisTitle:
+        "Deep Packet Inspection Applications for Traffic Classification",
+      yearOfGraduation: "September 2019",
+      rollno: "phd1401101001",
+    },
+    {
+      id: "phd1301201004",
+      name: "Rajendra Choudhary",
+      supervisor: "Prof. Kapil Ahuja",
+      img: "/alumini/APhd/1301201004.jpg",
+      profileLink:
+        "https://www.linkedin.com/in/rajendra-choudhary-7458b5217/",
+      thesisTitle:
+        "Stability Analysis of Inexact Linear Solves in Model Order Reduction",
+      yearOfGraduation: "October 2019",
+      rollno: "phd1301201004",
+    },
+    {
+      id: "phd1501201003",
+      name: "Ram Prakash Sharma",
+      supervisor: "Dr. Somnath Dey",
+      img: "/alumini/APhd/1501201003.jpg",
+      profileLink:
+        "https://www.linkedin.com/in/ram-prakash-sharma-b3197a78/",
+      thesisTitle:
+        "Assessment of Fingerprint Quality and Liveness Detection",
+      yearOfGraduation: "January 2020",
+      rollno: "phd1501201003",
+    },
+    {
+      id: "phd12110101",
+      name: "Rohit Verma",
+      supervisor: "Prof. Abhishek Srivastava",
+      img: "/alumini/APhd/12110101.jpg",
+      profileLink: "https://www.linkedin.com/in/rohitsv/",
+      thesisTitle:
+        "Service-Oriented Architecture for Constrained Environments",
+      yearOfGraduation: "January 2020",
+      rollno: "phd12110101",
+    },
+    {
+      id: "phd1501101002",
+      name: "G. Iyyakutti Iyappan",
+      supervisor: "Dr. Surya Prakash",
+      img: "/alumini/APhd/1501101002.jpg",
+      profileLink:
+        "https://www.linkedin.com/in/iyyakutti-iyappan-ganapathi-156992165/",
+      thesisTitle: "3D Ear based Human Recognition",
+      yearOfGraduation: "May 2020",
+      rollno: "phd1501101002",
+    },
+    {
+      id: "phd1501101001",
+      name: "Chandan Gautam",
+      supervisor: "Prof. Aruna Tiwari",
+      img: "/alumini/APhd/1501101001.jpg",
+      profileLink:
+        "https://www.linkedin.com/in/chandan-gautam-29404576/",
+      thesisTitle:
+        "One-class Classification via Kernel-based Learning",
+      yearOfGraduation: "May 2020",
+      rollno: "phd1501101001",
+    },
+    {
+      id: "phd1501101006",
+      name: "Animesh Chaturvedi",
+      supervisor: "Prof. Aruna Tiwari",
+      img: "/alumini/APhd/1501101006.jpg",
+      profileLink:
+        "https://www.linkedin.com/in/animeshchaturvedi88/",
+      thesisTitle:
+        "Data Mining & Learning of Complex Evolving Systems",
+      yearOfGraduation: "May 2020",
+      rollno: "phd1501101006",
+    },
+    {
+      id: "phd11120102",
+      name: "Dheeraj Rane",
+      supervisor: "Prof. Abhishek Srivastava",
+      img: "/alumini/APhd/11120102.jpg",
+      profileLink: "https://www.linkedin.com/in/ranedheeraj/",
+      thesisTitle:
+        "SLA Driven Performance Optimization in Cloud Computing",
+      yearOfGraduation: "May 2020",
+      rollno: "phd11120102",
+    },
+    {
+      id: "phd12110104",
+      name: "Pramod Mane",
+      supervisor: "Prof. Kapil Ahuja",
+      img: "/alumini/APhd/12110104.jpg",
+      profileLink: "https://www.linkedin.com/in/pramod-mane-46015924/",
+      thesisTitle: "Game Theoretic Models in Social Cloud",
+      yearOfGraduation: "May 2020",
+      rollno: "phd12110104",
+    },
+    {
+      id: "phd1010102",
+      name: "Raj Kumar Jain",
+      supervisor: "Prof. Narendra S Chaudhari",
+      img: "/alumini/APhd/1010102.jpg",
+      profileLink: "https://www.linkedin.com/in/jainrajkumar/",
+      thesisTitle:
+        "Approaches To Minimum Sum Of Diameter And Radii Clustering",
+      yearOfGraduation: "Dec 2020",
+      rollno: "phd1010102",
+    },
+    {
+      id: "phd1301201002",
+      name: "Navneet Pratap Singh",
+      supervisor: "Prof. Kapil Ahuja",
+      img: "/alumini/APhd/1301201002.jpg",
+      profileLink:
+        "https://www.linkedin.com/in/dr-navneet-pratap-singh-a946b5216/",
+      thesisTitle:
+        "Stable Linear Solves with Preconditioner Updates for Model Reduction",
+      yearOfGraduation: "Mar 2021",
+      rollno: "phd1301201002",
+    },
+    {
+      id: "phd1501201006",
+      name: "Aaditya Prakash Chouhan",
+      supervisor: "Dr. Gourinath Banda",
+      img: "/alumini/APhd/1501201006.jpg",
+      profileLink: "http://people.iiti.ac.in/~phd1501201006",
+      thesisTitle:
+        "Intelligent Transportation System: Algorithms & Formal Verification",
+      yearOfGraduation: "Apr 2021",
+      rollno: "phd1501201006",
+    },
+    {
+      id: "phd1501201001",
+      name: "Aditya Shastri",
+      supervisor: "Prof. Kapil Ahuja",
+      img: "/alumini/APhd/1501201001.jpg",
+      profileLink:
+        "https://in.linkedin.com/in/dr-aditya-shastri-3828b91b5",
+      thesisTitle:
+        "Novel ML Algorithms for Genotype Clustering & Cancer Classification",
+      yearOfGraduation: "Jul 2021",
+      rollno: "phd1501201001",
+    },
+    {
+      id: "phd1801201006",
+      name: "Preeti Jha",
+      supervisor: "Prof. Aruna Tiwari",
+      img: "/alumini/APhd/1801201006.jpg",
+      profileLink: "https://www.linkedin.com/in/preeti-jha-5a7b2054/",
+      thesisTitle:
+        "Design of Scalable Fuzzy Clustering Algorithms for Genomics Data",
+      yearOfGraduation: "Dec 2021",
+      rollno: "phd1801201006",
+    },
+    {
+      id: "phd1801201004",
+      name: "Mahendra Rathor",
+      supervisor: "Dr. Anirban Sengupta",
+      img: "/alumini/APhd/1801201004.jpg",
+      profileLink:
+        "https://in.linkedin.com/in/mahendra-rathor-6b56937a",
+      thesisTitle:
+        "Hardware (IP) Security for DSP and Multimedia Applications",
+      yearOfGraduation: "Mar 2022",
+      rollno: "phd1801201004",
+    },
+    {
+      id: "phd1501201004",
+      name: "Rohit Agrawal",
+      supervisor: "Prof. Kapil Ahuja",
+      img: "/alumini/APhd/1501201004.jpg",
+      profileLink: "https://www.linkedin.com/in/rohit-agrawal-iiti/",
+      thesisTitle:
+        "Novel Optimization Algorithms for Steganography and Chip Routing",
+      yearOfGraduation: "Jul 2022",
+      rollno: "phd1501201004",
+    },
+    {
+      id: "phd1901201001",
+      name: "Lokendra Birla",
+      supervisor: "Dr. Puneet Gupta",
+      img: "/alumini/APhd/1901201001.jpg",
+      profileLink: "https://www.linkedin.com/in/lokendrabirla/",
+      thesisTitle:
+        "Importance of remote-PPG for Securing Face Analytic Systems",
+      yearOfGraduation: "Sep 2022",
+      rollno: "phd1901201001",
+    },
+    {
+      id: "phd1701101006",
+      name: "Vikas Chauhan",
+      supervisor: "Dr. Aruna Tiwari",
+      img: "/alumini/APhd/1701101006.jpg",
+      profileLink: "https://www.linkedin.com/in/vikas-chauhan-32209033/",
+      thesisTitle:
+        "Multi-label Classification using Non-Iterative & Deep Learning",
+      yearOfGraduation: "Dec 2022",
+      rollno: "phd1701101006",
+    },
+    {
+      id: "phd1701101001",
+      name: "Akhilesh Mohan Srivastava",
+      supervisor: "Dr. Surya Prakash",
+      img: "/alumini/APhd/1701101001.jpg",
+      profileLink:
     "https://www.linkedin.com/in/akhilesh-mohan-srivastava/",
-  thesisTitle: "Biometric Recognition Using 3D Face",
-  yearOfGraduation: "Feb 2023",
-  rollno: "phd1701101001",
-},
-{
-  name: "Mahesh Joshi",
-  supervisor:
-    "Dr. Bodhisatwa Majumdar & Dr. Somnath Dey",
-  img: "/alumini/APhd/1701101004.jpg",
-  profileLink:
-    "https://www.linkedin.com/in/mahesh-joshi-669464223/",
-  thesisTitle:
-    "Mitigating MasterPrint Vulnerability in Fingerprint Systems",
-  yearOfGraduation: "Feb 2023",
-  rollno: "phd1701101004",
-},
-{
-  name: "Vivek Singh Baghel",
-  supervisor: "Dr. Surya Prakash",
-  img: "/alumini/APhd/1801201005.jpg",
-  profileLink: "https://www.linkedin.com/in/vsbaghel/",
-  thesisTitle: "Fingerprint Template Protection",
-  yearOfGraduation: "March 2023",
-  rollno: "phd1801201005",
-},
-{
-  name: "Rahul Chaurasia",
-  supervisor: "Dr. Anirban Sengupta",
-  img: "/alumini/APhd/2001201005.jpg",
-  profileLink:
-    "https://in.linkedin.com/in/rahul-chaurasia-iiti",
-  thesisTitle:
-    "IP Core Protection & Detective Control Against Piracy",
-  yearOfGraduation: "August 2023",
-  rollno: "phd2001201005",
-},
-{
-  name: "Gyan Prakash Tiwary",
-  supervisor: "Prof. Abhishek Srivastava",
-  img: "/alumini/APhd/1501101003.jpg",
-  profileLink:
-    "https://www.linkedin.com/in/gyan-prakash-tiwary-07215420/",
-  thesisTitle:
-    "Ensuring Secure and Robust Web Service Interactions",
-  yearOfGraduation: "August 2023",
-  rollno: "phd1501101003",
-},
-{
-  name: "Suchitra Agrawal",
-  supervisor: "Prof. Aruna Tiwari",
-  img: "/alumini/APhd/1801201003.jpg",
-  profileLink: "https://www.linkedin.com/in/suchitra007/",
-  thesisTitle:
-    "Multimodal Optimization using Differential Evolution",
-  yearOfGraduation: "Nov 2023",
-  rollno: "phd1801201003",
-},
-{
-  name: "Arun Kumar",
-  supervisor: "Prof. Abhishek Srivastava",
-  img: "/alumini/APhd/1701101005.jpg",
-  profileLink:
-    "https://www.linkedin.com/in/arun-kumar-434290157/",
-  thesisTitle:
-    "Classification Algorithms for Constrained Environments",
-  yearOfGraduation: "Dec 2023",
-  rollno: "phd1701101005",
-},
-{
-  name: "Priyanka Joshi",
-  supervisor: "Dr. Bodhisatwa Majumdar",
-  img: "/alumini/APhd/1801201001.jpg",
-  profileLink: "http://people.iiti.ac.in/~phd1801201001/",
-  thesisTitle:
-    "Lightweight Cryptosystems for Resource Limited Systems",
-  yearOfGraduation: "May 2024",
-  rollno: "phd1801201001",
-},
-{
-  name: "Rajesh Dwivedi",
-  supervisor: "Prof. Aruna Tiwari",
-  img: "/alumini/APhd/2101101003.jpg",
-  profileLink:
-    "https://www.linkedin.com/in/rajesh-dwivedi-830141144/",
-  thesisTitle:
-    "Novel Feature Selection & Clustering for Plant Genome Sequences",
-  yearOfGraduation: "August 2024",
-  rollno: "phd2101101003",
-},
-{
-  name: "Rituraj",
-  supervisor: "Prof. Aruna Tiwari",
-  img: "/alumini/APhd/2001201002.jpg",
-  profileLink:
-    "https://www.linkedin.com/in/rituraj-singh-phd-07202a181/",
-  thesisTitle:
-    "GAN Architecture Design for Video Anomaly Detection",
-  yearOfGraduation: "October 2024",
-  rollno: "phd2001201002",
-},
-{
-  name: "Ankit Jain",
-  supervisor: "Prof. Abhishek Srivastava",
-  img: "/alumini/APhd/1801101002.jpg",
-  profileLink:
-    "https://www.linkedin.com/in/dr-ankit-jain-18711580/",
-  thesisTitle:
-    "Privacy-Preserving Indoor Monitoring Systems",
-  yearOfGraduation: "Dec 2024",
-  rollno: "phd1801101002",
-},
-{
-  name: "Pratibha Khandait",
-  supervisor:
-    "Prof. Neminath Hubballi & Dr. Bodhisatwa Mazumdar",
-  img: "/alumini/APhd/1801101001.jpg",
-  profileLink:
-    "https://www.linkedin.com/in/pratibha-khandait-58pks3719/",
-  thesisTitle:
-    "Improving Deep Packet Inspection for Traffic Classification",
-  yearOfGraduation: "Jan 2025",
-  rollno: "phd1801101001",
-},
-{
-  name: "Aditya Anshul",
-  supervisor: "Prof. Anirban Sengupta",
-  img: "/alumini/APhd/2101101007.jpg",
-  profileLink:
-    "https://www.linkedin.com/in/aditya-anshul-675aab120/",
-  thesisTitle:
-    "Alternative Hardware Security Paradigms for IP Protection",
-  yearOfGraduation: "April 2025",
-  rollno: "phd2101101007",
-},
-{
-  name: "Anuj Rai",
-  supervisor: "Dr. Somnath Dey",
-  img: "/alumini/APhd/1901201003.jpg",
-  profileLink: "",
-  thesisTitle: "Spoof Detection in Fingerprint Biometric Systems",
-  yearOfGraduation: "April 2025",
-  rollno: "phd1901201003",
-},
-{
-  name: "Shubhi Bansal",
-  supervisor: "Dr. Nagendra Kumar",
-  img: "/alumini/APhd/2001201007.jpg",
-  profileLink: "",
-  thesisTitle:
-    "Deep Learning, NLP & Social Network Analysis",
-  yearOfGraduation: "June 2025",
-  rollno: "phd2001201007",
-},
-{
-  name: "Rupendra Pratap Singh Hada",
-  supervisor: "Prof. Abhishek Srivastava",
-  img: "/alumini/APhd/2101101004.jpg",
-  profileLink: "http://www.rupendra.me/",
-  thesisTitle:
-    "Machine Learning for Wireless Sensor Networks",
-  yearOfGraduation: "June 2025",
-  rollno: "phd2101101004",
-},
-
+      thesisTitle: "Biometric Recognition Using 3D Face",
+      yearOfGraduation: "Feb 2023",
+      rollno: "phd1701101001",
+    },
+    {
+      id: "phd1701101004",
+      name: "Mahesh Joshi",
+      supervisor:
+        "Dr. Bodhisatwa Majumdar & Dr. Somnath Dey",
+      img: "/alumini/APhd/1701101004.jpg",
+      profileLink:
+        "https://www.linkedin.com/in/mahesh-joshi-669464223/",
+      thesisTitle:
+        "Mitigating MasterPrint Vulnerability in Fingerprint Systems",
+      yearOfGraduation: "Feb 2023",
+      rollno: "phd1701101004",
+    },
+    {
+      id: "phd1801201005",
+      name: "Vivek Singh Baghel",
+      supervisor: "Dr. Surya Prakash",
+      img: "/alumini/APhd/1801201005.jpg",
+      profileLink: "https://www.linkedin.com/in/vsbaghel/",
+      thesisTitle: "Fingerprint Template Protection",
+      yearOfGraduation: "March 2023",
+      rollno: "phd1801201005",
+    },
+    {
+      id: "phd2001201005",
+      name: "Rahul Chaurasia",
+      supervisor: "Dr. Anirban Sengupta",
+      img: "/alumini/APhd/2001201005.jpg",
+      profileLink:
+        "https://in.linkedin.com/in/rahul-chaurasia-iiti",
+      thesisTitle:
+        "IP Core Protection & Detective Control Against Piracy",
+      yearOfGraduation: "August 2023",
+      rollno: "phd2001201005",
+    },
+    {
+      id: "phd1501101003",
+      name: "Gyan Prakash Tiwary",
+      supervisor: "Prof. Abhishek Srivastava",
+      img: "/alumini/APhd/1501101003.jpg",
+      profileLink:
+        "https://www.linkedin.com/in/gyan-prakash-tiwary-07215420/",
+      thesisTitle:
+        "Ensuring Secure and Robust Web Service Interactions",
+      yearOfGraduation: "August 2023",
+      rollno: "phd1501101003",
+    },
+    {
+      id: "phd1801201003",
+      name: "Suchitra Agrawal",
+      supervisor: "Prof. Aruna Tiwari",
+      img: "/alumini/APhd/1801201003.jpg",
+      profileLink: "https://www.linkedin.com/in/suchitra007/",
+      thesisTitle:
+        "Multimodal Optimization using Differential Evolution",
+      yearOfGraduation: "Nov 2023",
+      rollno: "phd1801201003",
+    },
+    {
+      id: "phd1701101005",
+      name: "Arun Kumar",
+      supervisor: "Prof. Abhishek Srivastava",
+      img: "/alumini/APhd/1701101005.jpg",
+      profileLink:
+        "https://www.linkedin.com/in/arun-kumar-434290157/",
+      thesisTitle:
+        "Classification Algorithms for Constrained Environments",
+      yearOfGraduation: "Dec 2023",
+      rollno: "phd1701101005",
+    },
+    {
+      id: "phd1801201001",
+      name: "Priyanka Joshi",
+      supervisor: "Dr. Bodhisatwa Majumdar",
+      img: "/alumini/APhd/1801201001.jpg",
+      profileLink: "http://people.iiti.ac.in/~phd1801201001/",
+      thesisTitle:
+        "Lightweight Cryptosystems for Resource Limited Systems",
+      yearOfGraduation: "May 2024",
+      rollno: "phd1801201001",
+    },
+    {
+      id: "phd2101101003",
+      name: "Rajesh Dwivedi",
+      supervisor: "Prof. Aruna Tiwari",
+      img: "/alumini/APhd/2101101003.jpg",
+      profileLink:
+        "https://www.linkedin.com/in/rajesh-dwivedi-830141144/",
+      thesisTitle:
+        "Novel Feature Selection & Clustering for Plant Genome Sequences",
+      yearOfGraduation: "August 2024",
+      rollno: "phd2101101003",
+    },
+    {
+      id: "phd2001201002",
+      name: "Rituraj",
+      supervisor: "Prof. Aruna Tiwari",
+      img: "/alumini/APhd/2001201002.jpg",
+      profileLink:
+        "https://www.linkedin.com/in/rituraj-singh-phd-07202a181/",
+      thesisTitle:
+        "GAN Architecture Design for Video Anomaly Detection",
+      yearOfGraduation: "October 2024",
+      rollno: "phd2001201002",
+    },
+    {
+      id: "phd1801101002",
+      name: "Ankit Jain",
+      supervisor: "Prof. Abhishek Srivastava",
+      img: "/alumini/APhd/1801101002.jpg",
+      profileLink:
+        "https://www.linkedin.com/in/dr-ankit-jain-18711580/",
+      thesisTitle:
+        "Privacy-Preserving Indoor Monitoring Systems",
+      yearOfGraduation: "Dec 2024",
+      rollno: "phd1801101002",
+    },
+    {
+      id: "phd1801101001",
+      name: "Pratibha Khandait",
+      supervisor:
+        "Prof. Neminath Hubballi & Dr. Bodhisatwa Mazumdar",
+      img: "/alumini/APhd/1801101001.jpg",
+      profileLink:
+        "https://www.linkedin.com/in/pratibha-khandait-58pks3719/",
+      thesisTitle:
+        "Improving Deep Packet Inspection for Traffic Classification",
+      yearOfGraduation: "Jan 2025",
+      rollno: "phd1801101001",
+    },
+    {
+      id: "phd2101101007",
+      name: "Aditya Anshul",
+      supervisor: "Prof. Anirban Sengupta",
+      img: "/alumini/APhd/2101101007.jpg",
+      profileLink:
+        "https://www.linkedin.com/in/aditya-anshul-675aab120/",
+      thesisTitle:
+        "Alternative Hardware Security Paradigms for IP Protection",
+      yearOfGraduation: "April 2025",
+      rollno: "phd2101101007",
+    },
+    {
+      id: "phd1901201003",
+      name: "Anuj Rai",
+      supervisor: "Dr. Somnath Dey",
+      img: "/alumini/APhd/1901201003.jpg",
+      profileLink: "",
+      thesisTitle: "Spoof Detection in Fingerprint Biometric Systems",
+      yearOfGraduation: "April 2025",
+      rollno: "phd1901201003",
+    },
+    {
+      id: "phd2001201007",
+      name: "Shubhi Bansal",
+      supervisor: "Dr. Nagendra Kumar",
+      img: "/alumini/APhd/2001201007.jpg",
+      profileLink: "",
+      thesisTitle:
+        "Deep Learning, NLP & Social Network Analysis",
+      yearOfGraduation: "June 2025",
+      rollno: "phd2001201007",
+    },
+    {
+      id: "phd2101101004",
+      name: "Rupendra Pratap Singh Hada",
+      supervisor: "Prof. Abhishek Srivastava",
+      img: "/alumini/APhd/2101101004.jpg",
+      profileLink: "http://www.rupendra.me/",
+      thesisTitle:
+        "Machine Learning for Wireless Sensor Networks",
+      yearOfGraduation: "June 2025",
+      rollno: "phd2101101004",
+    },
   ],
 
-
   graduatedMS: [
-  {
-    name: "Neha Sharma",
-    supervisor: "Dr. Neminath Hubballi",
-    profileLink: "https://www.linkedin.com/in/neha-sharma-332a8a149",
-    imageUrl: "/alumini/AMS/1804101001.jpg",
-    yearOfGraduation: "2020",
-    rollno: "ms1804101001"
-  },
-  {
-    name: "Prarthi Jain",
-    supervisor: "Prof. Abhishek Shriwastava",
-    profileLink: "https://www.linkedin.com/in/prarthi-jain-a06106171/",
-    imageUrl: "/alumini/AMS/1804101002.jpg",
-    yearOfGraduation: "2020",
-    rollno: "ms1804101002"
-  },
-  {
-    name: "Pratik Kumar Mishra",
-    supervisor: "Prof. Aruna Tiwari",
-    imageUrl: "/alumini/AMS/1804101003.jpg",
-    yearOfGraduation: "2020",
-    rollno: "ms1804101003"
-  },
-  {
-    name: "Shubham",
-    supervisor: "Dr. Surya Prakash",
-    imageUrl: "/alumini/AMS/1804101005.jpg",
-    yearOfGraduation: "2020",
-    rollno: "ms1804101005"
-  },
-  {
-    name: "Umar Aalam",
-    supervisor: "Dr. Neminath Hubballi and Dr. Bodhisatwa Mazumdar",
-    profileLink: "https://www.linkedin.com/in/umaraalam/",
-    imageUrl: "/alumini/AMS/1804101007.jpg",
-    yearOfGraduation: "2020",
-    rollno: "ms1804101007"
-  },
-  {
-    name: "Anagha Rameshwarrao Bhople",
-    supervisor: "Dr. Surya Prakash",
-    imageUrl: "/alumini/AMS/1804101008.jpg",
-    yearOfGraduation: "2020",
-    rollno: "ms1804101008"
-  },
-  {
-    name: "Siddharth Gupta",
-    supervisor: "Prof. Kapil Ahuja and Prof. Aruna Tiwari",
-    imageUrl: "/alumini/AMS/1804101006.jpg",
-    yearOfGraduation: "2020",
-    rollno: "ms1804101006"
-  },
-  {
-    name: "Anil",
-    supervisor: "Prof. Abhishek Srivastava",
-    profileLink: "https://www.linkedin.com/in/anil-yadav-9050/",
-    imageUrl: "/alumini/AMS/1904101002.jpg",
-    yearOfGraduation: "2021",
-    rollno: "ms1904101002"
-  },
-  {
-    name: "Ajay",
-    supervisor: "Prof. Aruna Tiwari",
-    profileLink: "https://www.linkedin.com/in/ajay-choudhary-7576277a/",
-    imageUrl: "/alumini/AMS/1904101003.jpg",
-    yearOfGraduation: "2021",
-    rollno: "ms1904101003"
-  },
-  {
-    name: "Anup Kumar Gupta",
-    supervisor: "Dr. Puneet Gupta",
-    profileLink: "https://www.linkedin.com/in/anupkumargupta/",
-    imageUrl: "/alumini/AMS/1904101004.jpg",
-    yearOfGraduation: "2021",
-    rollno: "ms1904101004"
-  },
-  {
-    name: "Namrata Tiwari",
-    supervisor: "Dr. Neminath Hubballi",
-    profileLink: "https://www.linkedin.com/in/namratatiwari1510/",
-    imageUrl: "/alumini/AMS/1904101005.jpg",
-    yearOfGraduation: "2021",
-    rollno: "ms1904101005"
-  },
-  {
-    name: "Shatendra Singh",
-    supervisor: "Prof. Aruna Tiwari",
-    profileLink: "https://www.linkedin.com/in/shatendra-singh-417560195/",
-    imageUrl: "/alumini/AMS/1904101007.jpg",
-    yearOfGraduation: "2021",
-    rollno: "ms1904101007"
-  },
-  {
-    name: "Fyse Nassar",
-    supervisor: "Dr. Neminath Hubballi",
-    profileLink: "https://www.linkedin.com/in/fysenassar/",
-    imageUrl: "/alumini/AMS/1904101009.jpg",
-    yearOfGraduation: "2021",
-    rollno: "ms1904101009"
-  },
-  {
-    name: "Saumya Mishra",
-    supervisor: "Dr. Puneet Gupta",
-    profileLink: "https://www.linkedin.com/in/saumya-mishra03/",
-    imageUrl: "/alumini/AMS/1904101010.jpg",
-    yearOfGraduation: "2021",
-    rollno: "ms1904101010"
-  },
-  {
-    name: "Uttkarsh Aggarwal",
-    supervisor: "Prof. Abhishek Shriwastava",
-    profileLink: "https://www.linkedin.com/in/uttkarshaggarwal/",
-    imageUrl: "/alumini/AMS/1904101011.jpg",
-    yearOfGraduation: "2021",
-    rollno: "ms1904101011"
-  },
-  {
-    name: "Afeeza Mohammed Ali",
-    supervisor: "Dr. Surya Prakash",
-    profileLink: "https://www.linkedin.com/in/afeeza-ali-734010128/",
-    imageUrl: "/alumini/AMS/2004101001.jpg",
-    yearOfGraduation: "2021",
-    rollno: "ms2004101001"
-  },
-  {
-    name: "Manepalli Ratna Sri",
-    supervisor: "Dr. Surya Prakash",
-    profileLink: "https://www.linkedin.com/in/manepalli-ratna-sri-b42980175/",
-    imageUrl: "/alumini/AMS/2004101004.jpg",
-    yearOfGraduation: "2022",
-    rollno: "ms2004101004"
-  },
-  {
-    name: "Rupesh Kumar",
-    supervisor: "Dr. Puneet Gupta",
-    profileLink: "https://www.linkedin.com/in/rupesh-kumar-316848121/",
-    imageUrl: "/alumini/AMS/2004101008.jpg",
-    yearOfGraduation: "2022",
-    rollno: "ms2004101008"
-  },
-  {
-    name: "Joshi Zarnaben Pranavkumar",
-    supervisor: "Dr. Ranveer Singh",
-    profileLink: "https://www.linkedin.com/in/zarna-joshi-42974b19a/",
-    imageUrl: "/alumini/AMS/2004101003.jpg",
-    yearOfGraduation: "2022",
-    rollno: "ms2004101003"
-  },
-  {
-    name: "Swastik Saxena",
-    supervisor: "Dr. Somnath Dey",
-    profileLink: "https://www.linkedin.com/in/swastik-saxena/",
-    imageUrl: "/alumini/AMS/2004101011.jpg",
-    yearOfGraduation: "2022",
-    rollno: "ms2004101011"
-  },
-  {
-    name: "Saurav Kumar",
-    supervisor: "Prof. Kapil Ahuja and Prof. Aruna Tiwari",
-    profileLink: "http://people.iiti.ac.in/~ms2004101009/",
-    imageUrl: "/alumini/AMS/2004101009.jpg",
-    yearOfGraduation: "2022",
-    rollno: "ms2004101009"
-  },
-  {
-    name: "Manas Kagde",
-    supervisor: "Dr. Somnath Dey",
-    profileLink: "http://people.iiti.ac.in/~ms2004101012/",
-    imageUrl: "/alumini/AMS/2004101012.jpg",
-    yearOfGraduation: "2022",
-    rollno: "ms2004101012"
-  },
-  {
-    name: "Ritu Bharat Munot",
-    supervisor: "Prof. Abhishek Srivastava",
-    profileLink: "http://people.iiti.ac.in/~ms2004101013/",
-    imageUrl: "/alumini/AMS/2004101013.jpg",
-    yearOfGraduation: "2022",
-    rollno: "ms2004101013"
-  },
-  {
-    name: "K Bharath",
-    supervisor: "Dr. Anirban Sengupta",
-    profileLink: "http://people.iiti.ac.in/~ms2104101004/",
-    imageUrl: "/alumini/AMS/2104101004.jpg",
-    yearOfGraduation: "2023",
-    rollno: "ms2104101004"
-  },
-  {
-    name: "Deepak Prasad",
-    supervisor: "Dr. Gourinath Banda",
-    profileLink: "https://www.linkedin.com/in/deepakprasad7/",
-    imageUrl: "/alumini/AMS/2104101002.jpg",
-    yearOfGraduation: "2024",
-    rollno: "ms2104101002"
-  },
-  {
-    name: "Mithun Singh",
-    supervisor: "Prof. Kapil Ahuja",
-    profileLink: "https://www.linkedin.com/in/mithun-singh-427862159/",
-    imageUrl: "/alumini/AMS/2104101011.jpg",
-    yearOfGraduation: "2024",
-    rollno: "ms2104101011"
-  },
-  {
-    name: "Ananya Roy",
-    supervisor: "Prof. Aruna Tiwari, Dr. Sanjay Singh (external)",
-    profileLink: "http://people.iiti.ac.in/~ms2104101013/",
-    imageUrl: "/alumini/AMS/2104101013.jpg",
-    rollno: "ms2104101013",
-    yearOfGraduation: "2024"
-  },
-  {
-    name: "Shibani Das",
-    supervisor: "Prof. Abhishek Srivastava",
-    profileLink: "https://www.linkedin.com/in/shibani-das-083852177/",
-    imageUrl: "/alumini/AMS/2104101014.jpg",
-    yearOfGraduation: "2024",
-    rollno: "ms2104101014"
-  },
-  {
-    name: "Drishti Sharma",
-    supervisor: "Prof. Abhishek Srivastava",
-    profileLink: "https://www.linkedin.com/in/drishti16/",
-    imageUrl: "/alumini/AMS/2204101002.jpg",
-    yearOfGraduation: "2024",
-    rollno: "ms2204101002"
-  },
-  {
-    name: "Prasad Chaudhari",
-    supervisor: "Dr. Nagendra Kumar",
-    profileLink: "http://people.iiti.ac.in/~ms2204101003/",
-    imageUrl: "/alumini/AMS/2204101003.jpg",
-    yearOfGraduation: "2024",
-    rollno: "ms2204101003"
-  },
-  {
-    name: "Balaram Sarkar",
-    supervisor: "Dr. Chandresh Kumar Maurya",
-    profileLink: "http://people.iiti.ac.in/~ms2204101006/",
-    imageUrl: "/alumini/AMS/2204101006.jpg",
-    yearOfGraduation: "2024",
-    rollno: "ms2204101006"
-  },
-  {
-    name: "Nisha Kumari Barsha",
-    supervisor: "Prof. Neminath Hubballi",
-    profileLink: "http://people.iiti.ac.in/~ms2204101007/",
-    imageUrl: "/alumini/AMS/2204101007.jpg",
-    yearOfGraduation: "2024",
-    rollno: "ms2204101007"
-  },
-  {
-    name: "Achint Kumar Kansal",
-    supervisor: "Prof. Aruna Tiwari",
-    profileLink: "http://people.iiti.ac.in/~ms2204101002/",
-    imageUrl: "/alumini/AMS/2204101009.jpg",
-    yearOfGraduation: "2024",
-    rollno: "ms2204101009"
-  },
-  {
-    name: "Amit Raj",
-    supervisor: "Prof. Kapil Ahuja",
-    profileLink: "https://www.linkedin.com/in/amit-raj-in/",
-    imageUrl: "/alumini/AMS/2204101010.jpg",
-    yearOfGraduation: "2024",
-    rollno: "ms2204101010"
-  },
-  {
-    name: "Annapureddy Venkata Sai Kumar Reddy",
-    supervisor: "Dr. Gourinath Banda",
-    profileLink: "https://www.linkedin.com/in/sai-kumar-annapureddy-24b681160/",
-    imageUrl: "/alumini/AMS/2204101012.jpg",
-    yearOfGraduation: "2025",
-    rollno: "ms2204101012"
-  },
-  {
-    name: "Neelesh Ghanghoriya",
-    supervisor: "Prof. Aruna Tiwari",
-    profileLink: "http://people.iiti.ac.in/~ms2004101006/",
-    imageUrl: "/alumini/AMS/2004101006.jpg",
-    yearOfGraduation: "2025",
-    rollno: "ms2004101006"
-  },
-  {
-    name: "Anirban Nath",
-    supervisor: "Dr. Puneet Gupta",
-    profileLink: "https://anirban-nath.github.io",
-    imageUrl: "/alumini/AMS/2104101001.jpg",
-    yearOfGraduation: "2025",
-    rollno: "ms2104101001"
-  },
-  {
-    name: "Priyanshu Singh",
-    supervisor: "Prof. Kapil Ahuja",
-    profileLink: "http://people.iiti.ac.in/~ms2104101009/",
-    imageUrl: "/alumini/AMS/2104101009.jpg",
-    yearOfGraduation: "2025",
-    rollno: "ms2104101009"
-  },
-  {
-    name: "Aishwarya Priyadarshini",
-    supervisor: "Dr. Surya Prakash",
-    profileLink: "http://people.iiti.ac.in/~ms2304101003/",
-    imageUrl: "/alumini/AMS/2304101003.jpg",
-    yearOfGraduation: "2025",
-    rollno: "ms2304101003"
-  },
-  {
-    name: "Aman Singh",
-    supervisor: "Dr. Ranveer Singh",
-    profileLink: "http://people.iiti.ac.in/~ms2304101004/",
-    imageUrl: "/alumini/AMS/2304101004.jpg",
-    yearOfGraduation: "2025",
-    rollno: "ms2304101004"
-  },
-],
-
+    {
+      id: "ms1804101001",
+      name: "Neha Sharma",
+      supervisor: "Dr. Neminath Hubballi",
+      profileLink: "https://www.linkedin.com/in/neha-sharma-332a8a149",
+      imageUrl: "/alumini/AMS/1804101001.jpg",
+      yearOfGraduation: "2020",
+      rollno: "ms1804101001"
+    },
+    {
+      id: "ms1804101002",
+      name: "Prarthi Jain",
+      supervisor: "Prof. Abhishek Shriwastava",
+      profileLink: "https://www.linkedin.com/in/prarthi-jain-a06106171/",
+      imageUrl: "/alumini/AMS/1804101002.jpg",
+      yearOfGraduation: "2020",
+      rollno: "ms1804101002"
+    },
+    {
+      id: "ms1804101003",
+      name: "Pratik Kumar Mishra",
+      supervisor: "Prof. Aruna Tiwari",
+      imageUrl: "/alumini/AMS/1804101003.jpg",
+      yearOfGraduation: "2020",
+      rollno: "ms1804101003"
+    },
+    {
+      id: "ms1804101005",
+      name: "Shubham",
+      supervisor: "Dr. Surya Prakash",
+      imageUrl: "/alumini/AMS/1804101005.jpg",
+      yearOfGraduation: "2020",
+      rollno: "ms1804101005"
+    },
+    {
+      id: "ms1804101007",
+      name: "Umar Aalam",
+      supervisor: "Dr. Neminath Hubballi and Dr. Bodhisatwa Mazumdar",
+      profileLink: "https://www.linkedin.com/in/umaraalam/",
+      imageUrl: "/alumini/AMS/1804101007.jpg",
+      yearOfGraduation: "2020",
+      rollno: "ms1804101007"
+    },
+    {
+      id: "ms1804101008",
+      name: "Anagha Rameshwarrao Bhople",
+      supervisor: "Dr. Surya Prakash",
+      imageUrl: "/alumini/AMS/1804101008.jpg",
+      yearOfGraduation: "2020",
+      rollno: "ms1804101008"
+    },
+    {
+      id: "ms1804101006",
+      name: "Siddharth Gupta",
+      supervisor: "Prof. Kapil Ahuja and Prof. Aruna Tiwari",
+      imageUrl: "/alumini/AMS/1804101006.jpg",
+      yearOfGraduation: "2020",
+      rollno: "ms1804101006"
+    },
+    {
+      id: "ms1904101002",
+      name: "Anil",
+      supervisor: "Prof. Abhishek Srivastava",
+      profileLink: "https://www.linkedin.com/in/anil-yadav-9050/",
+      imageUrl: "/alumini/AMS/1904101002.jpg",
+      yearOfGraduation: "2021",
+      rollno: "ms1904101002"
+    },
+    {
+      id: "ms1904101003",
+      name: "Ajay",
+      supervisor: "Prof. Aruna Tiwari",
+      profileLink: "https://www.linkedin.com/in/ajay-choudhary-7576277a/",
+      imageUrl: "/alumini/AMS/1904101003.jpg",
+      yearOfGraduation: "2021",
+      rollno: "ms1904101003"
+    },
+    {
+      id: "ms1904101004",
+      name: "Anup Kumar Gupta",
+      supervisor: "Dr. Puneet Gupta",
+      profileLink: "https://www.linkedin.com/in/anupkumargupta/",
+      imageUrl: "/alumini/AMS/1904101004.jpg",
+      yearOfGraduation: "2021",
+      rollno: "ms1904101004"
+    },
+    {
+      id: "ms1904101005",
+      name: "Namrata Tiwari",
+      supervisor: "Dr. Neminath Hubballi",
+      profileLink: "https://www.linkedin.com/in/namratatiwari1510/",
+      imageUrl: "/alumini/AMS/1904101005.jpg",
+      yearOfGraduation: "2021",
+      rollno: "ms1904101005"
+    },
+    {
+      id: "ms1904101007",
+      name: "Shatendra Singh",
+      supervisor: "Prof. Aruna Tiwari",
+      profileLink: "https://www.linkedin.com/in/shatendra-singh-417560195/",
+      imageUrl: "/alumini/AMS/1904101007.jpg",
+      yearOfGraduation: "2021",
+      rollno: "ms1904101007"
+    },
+    {
+      id: "ms1904101009",
+      name: "Fyse Nassar",
+      supervisor: "Dr. Neminath Hubballi",
+      profileLink: "https://www.linkedin.com/in/fysenassar/",
+      imageUrl: "/alumini/AMS/1904101009.jpg",
+      yearOfGraduation: "2021",
+      rollno: "ms1904101009"
+    },
+    {
+      id: "ms1904101010",
+      name: "Saumya Mishra",
+      supervisor: "Dr. Puneet Gupta",
+      profileLink: "https://www.linkedin.com/in/saumya-mishra03/",
+      imageUrl: "/alumini/AMS/1904101010.jpg",
+      yearOfGraduation: "2021",
+      rollno: "ms1904101010"
+    },
+    {
+      id: "ms1904101011",
+      name: "Uttkarsh Aggarwal",
+      supervisor: "Prof. Abhishek Shriwastava",
+      profileLink: "https://www.linkedin.com/in/uttkarshaggarwal/",
+      imageUrl: "/alumini/AMS/1904101011.jpg",
+      yearOfGraduation: "2021",
+      rollno: "ms1904101011"
+    },
+    {
+      id: "ms2004101001",
+      name: "Afeeza Mohammed Ali",
+      supervisor: "Dr. Surya Prakash",
+      profileLink: "https://www.linkedin.com/in/afeeza-ali-734010128/",
+      imageUrl: "/alumini/AMS/2004101001.jpg",
+      yearOfGraduation: "2021",
+      rollno: "ms2004101001"
+    },
+    {
+      id: "ms2004101004",
+      name: "Manepalli Ratna Sri",
+      supervisor: "Dr. Surya Prakash",
+      profileLink: "https://www.linkedin.com/in/manepalli-ratna-sri-b42980175/",
+      imageUrl: "/alumini/AMS/2004101004.jpg",
+      yearOfGraduation: "2022",
+      rollno: "ms2004101004"
+    },
+    {
+      id: "ms2004101008",
+      name: "Rupesh Kumar",
+      supervisor: "Dr. Puneet Gupta",
+      profileLink: "https://www.linkedin.com/in/rupesh-kumar-316848121/",
+      imageUrl: "/alumini/AMS/2004101008.jpg",
+      yearOfGraduation: "2022",
+      rollno: "ms2004101008"
+    },
+    {
+      id: "ms2004101003",
+      name: "Joshi Zarnaben Pranavkumar",
+      supervisor: "Dr. Ranveer Singh",
+      profileLink: "https://www.linkedin.com/in/zarna-joshi-42974b19a/",
+      imageUrl: "/alumini/AMS/2004101003.jpg",
+      yearOfGraduation: "2022",
+      rollno: "ms2004101003"
+    },
+    {
+      id: "ms2004101011",
+      name: "Swastik Saxena",
+      supervisor: "Dr. Somnath Dey",
+      profileLink: "https://www.linkedin.com/in/swastik-saxena/",
+      imageUrl: "/alumini/AMS/2004101011.jpg",
+      yearOfGraduation: "2022",
+      rollno: "ms2004101011"
+    },
+    {
+      id: "ms2004101009",
+      name: "Saurav Kumar",
+      supervisor: "Prof. Kapil Ahuja and Prof. Aruna Tiwari",
+      profileLink: "http://people.iiti.ac.in/~ms2004101009/",
+      imageUrl: "/alumini/AMS/2004101009.jpg",
+      yearOfGraduation: "2022",
+      rollno: "ms2004101009"
+    },
+    {
+      id: "ms2004101012",
+      name: "Manas Kagde",
+      supervisor: "Dr. Somnath Dey",
+      profileLink: "http://people.iiti.ac.in/~ms2004101012/",
+      imageUrl: "/alumini/AMS/2004101012.jpg",
+      yearOfGraduation: "2022",
+      rollno: "ms2004101012"
+    },
+    {
+      id: "ms2004101013",
+      name: "Ritu Bharat Munot",
+      supervisor: "Prof. Abhishek Srivastava",
+      profileLink: "http://people.iiti.ac.in/~ms2004101013/",
+      imageUrl: "/alumini/AMS/2004101013.jpg",
+      yearOfGraduation: "2022",
+      rollno: "ms2004101013"
+    },
+    {
+      id: "ms2104101004",
+      name: "K Bharath",
+      supervisor: "Dr. Anirban Sengupta",
+      profileLink: "http://people.iiti.ac.in/~ms2104101004/",
+      imageUrl: "/alumini/AMS/2104101004.jpg",
+      yearOfGraduation: "2023",
+      rollno: "ms2104101004"
+    },
+    {
+      id: "ms2104101002",
+      name: "Deepak Prasad",
+      supervisor: "Dr. Gourinath Banda",
+      profileLink: "https://www.linkedin.com/in/deepakprasad7/",
+      imageUrl: "/alumini/AMS/2104101002.jpg",
+      yearOfGraduation: "2024",
+      rollno: "ms2104101002"
+    },
+    {
+      id: "ms2104101011",
+      name: "Mithun Singh",
+      supervisor: "Prof. Kapil Ahuja",
+      profileLink: "https://www.linkedin.com/in/mithun-singh-427862159/",
+      imageUrl: "/alumini/AMS/2104101011.jpg",
+      yearOfGraduation: "2024",
+      rollno: "ms2104101011"
+    },
+    {
+      id: "ms2104101013",
+      name: "Ananya Roy",
+      supervisor: "Prof. Aruna Tiwari, Dr. Sanjay Singh (external)",
+      profileLink: "http://people.iiti.ac.in/~ms2104101013/",
+      imageUrl: "/alumini/AMS/2104101013.jpg",
+      rollno: "ms2104101013",
+      yearOfGraduation: "2024"
+    },
+    {
+      id: "ms2104101014",
+      name: "Shibani Das",
+      supervisor: "Prof. Abhishek Srivastava",
+      profileLink: "https://www.linkedin.com/in/shibani-das-083852177/",
+      imageUrl: "/alumini/AMS/2104101014.jpg",
+      yearOfGraduation: "2024",
+      rollno: "ms2104101014"
+    },
+    {
+      id: "ms2204101002",
+      name: "Drishti Sharma",
+      supervisor: "Prof. Abhishek Srivastava",
+      profileLink: "https://www.linkedin.com/in/drishti16/",
+      imageUrl: "/alumini/AMS/2204101002.jpg",
+      yearOfGraduation: "2024",
+      rollno: "ms2204101002"
+    },
+    {
+      id: "ms2204101003",
+      name: "Prasad Chaudhari",
+      supervisor: "Dr. Nagendra Kumar",
+      profileLink: "http://people.iiti.ac.in/~ms2204101003/",
+      imageUrl: "/alumini/AMS/2204101003.jpg",
+      yearOfGraduation: "2024",
+      rollno: "ms2204101003"
+    },
+    {
+      id: "ms2204101006",
+      name: "Balaram Sarkar",
+      supervisor: "Dr. Chandresh Kumar Maurya",
+      profileLink: "http://people.iiti.ac.in/~ms2204101006/",
+      imageUrl: "/alumini/AMS/2204101006.jpg",
+      yearOfGraduation: "2024",
+      rollno: "ms2204101006"
+    },
+    {
+      id: "ms2204101007",
+      name: "Nisha Kumari Barsha",
+      supervisor: "Prof. Neminath Hubballi",
+      profileLink: "http://people.iiti.ac.in/~ms2204101007/",
+      imageUrl: "/alumini/AMS/2204101007.jpg",
+      yearOfGraduation: "2024",
+      rollno: "ms2204101007"
+    },
+    {
+      id: "ms2204101009",
+      name: "Achint Kumar Kansal",
+      supervisor: "Prof. Aruna Tiwari",
+      profileLink: "http://people.iiti.ac.in/~ms2204101009/",
+      imageUrl: "/alumini/AMS/2204101009.jpg",
+      yearOfGraduation: "2024",
+      rollno: "ms2204101009"
+    },
+    {
+      id: "ms2204101010",
+      name: "Amit Raj",
+      supervisor: "Prof. Kapil Ahuja",
+      profileLink: "https://www.linkedin.com/in/amit-raj-in/",
+      imageUrl: "/alumini/AMS/2204101010.jpg",
+      yearOfGraduation: "2024",
+      rollno: "ms2204101010"
+    },
+    {
+      id: "ms2204101012",
+      name: "Annapureddy Venkata Sai Kumar Reddy",
+      supervisor: "Dr. Gourinath Banda",
+      profileLink: "https://www.linkedin.com/in/sai-kumar-annapureddy-24b681160/",
+      imageUrl: "/alumini/AMS/2204101012.jpg",
+      yearOfGraduation: "2025",
+      rollno: "ms2204101012"
+    },
+    {
+      id: "ms2004101006",
+      name: "Neelesh Ghanghoriya",
+      supervisor: "Prof. Aruna Tiwari",
+      profileLink: "http://people.iiti.ac.in/~ms2004101006/",
+      imageUrl: "/alumini/AMS/2004101006.jpg",
+      yearOfGraduation: "2025",
+      rollno: "ms2004101006"
+    },
+    {
+      id: "ms2104101001",
+      name: "Anirban Nath",
+      supervisor: "Dr. Puneet Gupta",
+      profileLink: "https://anirban-nath.github.io",
+      imageUrl: "/alumini/AMS/2104101001.jpg",
+      yearOfGraduation: "2025",
+      rollno: "ms2104101001"
+    },
+    {
+      id: "ms2104101009",
+      name: "Priyanshu Singh",
+      supervisor: "Prof. Kapil Ahuja",
+      profileLink: "http://people.iiti.ac.in/~ms2104101009/",
+      imageUrl: "/alumini/AMS/2104101009.jpg",
+      yearOfGraduation: "2025",
+      rollno: "ms2104101009"
+    },
+    {
+      id: "ms2304101003",
+      name: "Aishwarya Priyadarshini",
+      supervisor: "Dr. Surya Prakash",
+      profileLink: "http://people.iiti.ac.in/~ms2304101003/",
+      imageUrl: "/alumini/AMS/2304101003.jpg",
+      yearOfGraduation: "2025",
+      rollno: "ms2304101003"
+    },
+    {
+      id: "ms2304101004",
+      name: "Aman Singh",
+      supervisor: "Dr. Ranveer Singh",
+      profileLink: "http://people.iiti.ac.in/~ms2304101004/",
+      imageUrl: "/alumini/AMS/2304101004.jpg",
+      yearOfGraduation: "2025",
+      rollno: "ms2304101004"
+    },
+  ],
 
   graduatedMTech: [
-  {
-    name: 'Aayush Dhanesh Agrawal',
-    supervisor: "  Prof. Kapil Ahuja ",
-    specialization: 'Computer Science',
-    profileLink: "https://www.linkedin.com/in/aayush-agrawal-79a180175/",
-    img: '/alumini/AMtech/2302101001.jpg',
-    yearOfGraduation: '2025',
-    rollno: 'mt2302101001'
-  },
-  {
-    name: 'Adit Srivastava ',
-    supervisor: "  Dr. Puneet Gupta ",
-    profileLink: "https://www.linkedin.com/in/adit-srivastava-5a46991a1/",
-    img: '/alumini/AMtech/2302101002.jpg',
-    yearOfGraduation: '2025',
-    rollno: 'mt2302101002'
-  },
-  {
-    name: 'Aditi Gajanan Aralkar',
-    supervisor: "  Prof. Neminath Hubballi ",
-    profileLink: "",
-    img: '/alumini/AMtech/2302101003.jpg',
-    yearOfGraduation: '2025',
-    rollno: 'mt2302101003'
-  },
-  {
-    name: 'Aditya Chandle',
-    supervisor: " Prof. Aruna Tiwari ",
-    profileLink: "https://www.linkedin.com/in/aditya-chandle-744859209/",
-    img: '/alumini/AMtech/2302101004.jpg',
-    yearOfGraduation: '2025',
-    rollno: 'mt2302101004'
-  },
-  {
-    name: 'Amardeep Singh',
-    supervisor: " Dr. Soumi Chattopadhyay ",
-    profileLink: "",
-    img: '/alumini/AMtech/2302101005.jpg',
-    yearOfGraduation: '2025',
-    rollno: 'mt2302101005'
-  },
-  {
-    name: 'Anukarsh Pratap',
-    supervisor: "  Prof. Abhishek Srivastava ",
-    profileLink: "https://www.linkedin.com/in/anukarshpratap1619/",
-    img: '/alumini/AMtech/2302101006.jpg',
-    yearOfGraduation: '2025',
-    rollno: 'mt2302101006'
-  },
-  {
-    name: 'Anukriti Bhatnagar',
-    supervisor: "  Dr.Nagendra Kumar  ",
-    profileLink: "https://www.linkedin.com/in/anukriti-bhatnagar-a928a0209/",
-    img: '/alumini/AMtech/2302101007.jpg',
-    yearOfGraduation: '2025',
-    rollno: 'mt2302101007'
-  },
-  {
-    name: 'Apoorv Vinayak Ambade',
-    supervisor: "  Dr. Gourinath Banda ",
-    profileLink: "https://www.linkedin.com/in/apoorv-ambade-27a239170/",
-    img: '/alumini/AMtech/2302101008.jpg',
-    yearOfGraduation: '2025',
-    rollno: 'mt2302101008'
-  },
-  {
-    name: 'Dhananjay Suresh Kansule',
-    supervisor: "  Dr. Ranveer Singh ",
-    profileLink: "",
-    img: '/alumini/AMtech/2302101009.jpg',
-    yearOfGraduation: '2025',
-    rollno: 'mt2302101009'
-  },
-  {
-    name: 'Naved Inam',
-    supervisor: "  Dr. Sidharth Sharma ",
-    profileLink: "https://www.linkedin.com/in/naved2469/",
-    img: '/alumini/AMtech/2302101010.jpg',
-    yearOfGraduation: '2025',
-    rollno: 'mt2302101010'
-  },
-  {
-    name: 'Nitish Kumar',
-    supervisor: "  Prof. Anirban Sengupta ",
-    profileLink: "https://www.linkedin.com/in/nitish-kumar-b7a3b91b1/",
-    img: '/alumini/AMtech/2302101011.jpg',
-    yearOfGraduation: '2025',
-    rollno: 'mt2302101011'
-  },
-  {
-    name: 'S Deepak Raam',
-    supervisor: "  Prof. Somnath Dey ",
-    profileLink: "https://www.linkedin.com/in/sdeepakraam/",
-    img: '/alumini/AMtech/2302101012.jpg',
-    yearOfGraduation: '2025',
-    rollno: 'mt2302101012'
-  },
-  {
-    name: 'Shabbir Poswal',
-    supervisor: "  Dr. Ayan Mondal ",
-    profileLink: "https://www.linkedin.com/in/shabbirposwal/",
-    img: '/alumini/AMtech/2302101013.jpg',
-    yearOfGraduation: '2025',
-    rollno: 'mt2302101013'
-  },
-  {
-    name: 'Vikas Chauhan',
-    supervisor: "  Dr. Chandresh Kumar Maurya ",
-    profileLink: "https://www.linkedin.com/in/iamvikaschauhan/",
-    img: '/alumini/AMtech/2302101014.jpg',
-    yearOfGraduation: '2025',
-    rollno: 'mt2302101014'
-  },
-  {
-    name: 'Sonu Kumar Kushwaha',
-    supervisor: " Dr. Aniruddha Singh Kushwaha ",
-    profileLink: "https://www.linkedin.com/in/sonu-kumar-kushwaha-b0ab22190/",
-    img: '/alumini/AMtech/2302101016.jpg',
-    yearOfGraduation: '2025',
-    rollno: 'mt2302101016'
-  },
-  {
-    name: 'Uzzal Saha',
-    supervisor: "  Prof. Surya Prakash ",
-    profileLink: "https://www.linkedin.com/in/uzzal-saha-5a08ba1b3/",
-    img: '/alumini/AMtech/2302101017.jpg',
-    yearOfGraduation: '2025',
-    rollno: 'mt2302101017'
-  },
-]
+    {
+      id: 'mt2302101001',
+      name: 'Aayush Dhanesh Agrawal',
+      supervisor: "  Prof. Kapil Ahuja ",
+      specialization: 'Computer Science',
+      profileLink: "https://www.linkedin.com/in/aayush-agrawal-79a180175/",
+      img: '/alumini/AMtech/2302101001.jpg',
+      yearOfGraduation: '2025',
+      rollno: 'mt2302101001'
+    },
+    {
+      id: 'mt2302101002',
+      name: 'Adit Srivastava ',
+      supervisor: "  Dr. Puneet Gupta ",
+      profileLink: "https://www.linkedin.com/in/adit-srivastava-5a46991a1/",
+      img: '/alumini/AMtech/2302101002.jpg',
+      yearOfGraduation: '2025',
+      rollno: 'mt2302101002'
+    },
+    {
+      id: 'mt2302101003',
+      name: 'Aditi Gajanan Aralkar',
+      supervisor: "  Prof. Neminath Hubballi ",
+      profileLink: "",
+      img: '/alumini/AMtech/2302101003.jpg',
+      yearOfGraduation: '2025',
+      rollno: 'mt2302101003'
+    },
+    {
+      id: 'mt2302101004',
+      name: 'Aditya Chandle',
+      supervisor: " Prof. Aruna Tiwari ",
+      profileLink: "https://www.linkedin.com/in/aditya-chandle-744859209/",
+      img: '/alumini/AMtech/2302101004.jpg',
+      yearOfGraduation: '2025',
+      rollno: 'mt2302101004'
+    },
+    {
+      id: 'mt2302101005',
+      name: 'Amardeep Singh',
+      supervisor: " Dr. Soumi Chattopadhyay ",
+      profileLink: "",
+      img: '/alumini/AMtech/2302101005.jpg',
+      yearOfGraduation: '2025',
+      rollno: 'mt2302101005'
+    },
+    {
+      id: 'mt2302101006',
+      name: 'Anukarsh Pratap',
+      supervisor: "  Prof. Abhishek Srivastava ",
+      profileLink: "https://www.linkedin.com/in/anukarshpratap1619/",
+      img: '/alumini/AMtech/2302101006.jpg',
+      yearOfGraduation: '2025',
+      rollno: 'mt2302101006'
+    },
+    {
+      id: 'mt2302101007',
+      name: 'Anukriti Bhatnagar',
+      supervisor: "  Dr.Nagendra Kumar  ",
+      profileLink: "https://www.linkedin.com/in/anukriti-bhatnagar-a928a0209/",
+      img: '/alumini/AMtech/2302101007.jpg',
+      yearOfGraduation: '2025',
+      rollno: 'mt2302101007'
+    },
+    {
+      id: 'mt2302101008',
+      name: 'Apoorv Vinayak Ambade',
+      supervisor: "  Dr. Gourinath Banda ",
+      profileLink: "https://www.linkedin.com/in/apoorv-ambade-27a239170/",
+      img: '/alumini/AMtech/2302101008.jpg',
+      yearOfGraduation: '2025',
+      rollno: 'mt2302101008'
+    },
+    {
+      id: 'mt2302101009',
+      name: 'Dhananjay Suresh Kansule',
+      supervisor: "  Dr. Ranveer Singh ",
+      profileLink: "",
+      img: '/alumini/AMtech/2302101009.jpg',
+      yearOfGraduation: '2025',
+      rollno: 'mt2302101009'
+    },
+    {
+      id: 'mt2302101010',
+      name: 'Naved Inam',
+      supervisor: "  Dr. Sidharth Sharma ",
+      profileLink: "https://www.linkedin.com/in/naved2469/",
+      img: '/alumini/AMtech/2302101010.jpg',
+      yearOfGraduation: '2025',
+      rollno: 'mt2302101010'
+    },
+    {
+      id: 'mt2302101011',
+      name: 'Nitish Kumar',
+      supervisor: "  Prof. Anirban Sengupta ",
+      profileLink: "https://www.linkedin.com/in/nitish-kumar-b7a3b91b1/",
+      img: '/alumini/AMtech/2302101011.jpg',
+      yearOfGraduation: '2025',
+      rollno: 'mt2302101011'
+    },
+    {
+      id: 'mt2302101012',
+      name: 'S Deepak Raam',
+      supervisor: "  Prof. Somnath Dey ",
+      profileLink: "https://www.linkedin.com/in/sdeepakraam/",
+      img: '/alumini/AMtech/2302101012.jpg',
+      yearOfGraduation: '2025',
+      rollno: 'mt2302101012'
+    },
+    {
+      id: 'mt2302101013',
+      name: 'Shabbir Poswal',
+      supervisor: "  Dr. Ayan Mondal ",
+      profileLink: "https://www.linkedin.com/in/shabbirposwal/",
+      img: '/alumini/AMtech/2302101013.jpg',
+      yearOfGraduation: '2025',
+      rollno: 'mt2302101013'
+    },
+    {
+      id: 'mt2302101014',
+      name: 'Vikas Chauhan',
+      supervisor: "  Dr. Chandresh Kumar Maurya ",
+      profileLink: "https://www.linkedin.com/in/iamvikaschauhan/",
+      img: '/alumini/AMtech/2302101014.jpg',
+      yearOfGraduation: '2025',
+      rollno: 'mt2302101014'
+    },
+    {
+      id: 'mt2302101016',
+      name: 'Sonu Kumar Kushwaha',
+      supervisor: " Dr. Aniruddha Singh Kushwaha ",
+      profileLink: "https://www.linkedin.com/in/sonu-kumar-kushwaha-b0ab22190/",
+      img: '/alumini/AMtech/2302101016.jpg',
+      yearOfGraduation: '2025',
+      rollno: 'mt2302101016'
+    },
+    {
+      id: 'mt2302101017',
+      name: 'Uzzal Saha',
+      supervisor: "  Prof. Surya Prakash ",
+      profileLink: "https://www.linkedin.com/in/uzzal-saha-5a08ba1b3/",
+      img: '/alumini/AMtech/2302101017.jpg',
+      yearOfGraduation: '2025',
+      rollno: 'mt2302101017'
+    },
+  ]
+
 }
