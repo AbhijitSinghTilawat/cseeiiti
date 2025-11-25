@@ -1,34 +1,42 @@
+// app/people/alumni/btech/[year]/page.tsx
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-// ऊपर वाली लाइन को ऐसे बदलो:
 import { allAlumniData } from "@/lib/alumniData";
-// अगर तुम्हारी फ़ाइल का नाम बदलती है तो यहाँ बदल लेना
-
-type ParamsLike = { year: string } | Promise<{ year: string }>;
 
 type Props = {
-  params: ParamsLike;
+  params: {
+    year: string | undefined | null;
+  } | Promise<{ year: string | undefined | null }>;
 };
 
-export default async function BTechAlumniYearPage({ params }: Props) {
-  // Safely unwrap params whether it's a Promise or plain object
-  const resolvedParams = await Promise.resolve(params as any);
-  const { year } = resolvedParams ?? {};
-  if (!year) {
-    return (
-      <div className="container mx-auto px-4 py-12">
-        <p className="text-center text-red-600">Invalid batch year.</p>
-      </div>
-    );
+// helper: normalize + encode image path
+function normalizeImgPath(raw?: string | null, placeholder = "/png/avatar-placeholder.png") {
+  if (!raw) return placeholder;
+  const withLeading = raw.startsWith("/") ? raw : `/${raw}`;
+  try {
+    return encodeURI(withLeading);
+  } catch {
+    return placeholder;
   }
+}
 
-  const alumniRaw = allAlumniData[year] ?? [];
+export default async function BTechAlumniYearPage({ params }: Props) {
+  // unwrap params safely (Next.js may provide params as a Promise in some cases)
+  const { year } = (await params) ?? { year: undefined };
+
+  // If year is missing, show empty list
+  const safeYear = typeof year === "string" ? year : "";
+
+  // cast allAlumniData to an indexable record so TS allows dynamic indexing
+  const alumniRaw = (allAlumniData as Record<string, any[]>)[safeYear] ?? [];
+
+  // ensure it's an array and sort safely
   const alumni = Array.isArray(alumniRaw)
-    ? alumniRaw.slice().sort((a, b) => (a.name || "").localeCompare(b.name || ""))
+    ? alumniRaw.slice().sort((a, b) => ((a?.name ?? "") as string).localeCompare((b?.name ?? "") as string))
     : [];
 
-  const displayYear = String(year).replace(/-/g, "–");
+  const displayYear = safeYear ? safeYear.replace(/-/g, "–") : "Unknown";
   const placeholder = "/png/avatar-placeholder.png";
 
   return (
@@ -51,26 +59,20 @@ export default async function BTechAlumniYearPage({ params }: Props) {
 
       {alumni.length > 0 ? (
         <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-4 sm:gap-6 lg:gap-8 justify-items-center">
-          {alumni.map((person) => {
-            const key = person.id ?? person.rollno ?? person.name ?? Math.random().toString(36).slice(2, 9);
-            const imgSrc = (person as any).imageUrl || (person as any).img || placeholder;
-            const displayId = person.id ?? person.rollno ?? "";
-
+          {alumni.map((person: any) => {
+            const imgSrc = normalizeImgPath(person.imageUrl ?? person.img ?? person.image ?? placeholder, placeholder);
+            const id = person.id ?? person.rollno ?? person.name ?? Math.random().toString(36).slice(2, 9);
             return (
               <article
-                key={key}
+                key={id}
                 className="flex flex-col bg-white rounded-2xl shadow-xl overflow-hidden border border-gray-200 transition-transform duration-300 hover:scale-105 w-full max-w-[190px] sm:max-w-[220px]"
                 aria-label={`Alumnus ${person.name}`}
               >
                 <div className="flex flex-col items-center justify-center pt-6 pb-4 bg-white">
                   <div className="relative w-28 h-28 sm:w-32 sm:h-32 rounded-md overflow-hidden">
-                    <Image
-                      src={imgSrc}
-                      alt={person.name || "Alumnus"}
-                      fill
-                      sizes="(max-width: 640px) 80px, (max-width: 1024px) 120px, 128px"
-                      className="object-cover"
-                    />
+                    {/* using plain img instead of next/image if filenames cause runtime issues;
+                        If you prefer next/image, you can swap, but make sure domains / loader config is set. */}
+                    <img src={imgSrc} alt={person.name} className="object-cover w-full h-full" />
                   </div>
                 </div>
 
@@ -78,20 +80,19 @@ export default async function BTechAlumniYearPage({ params }: Props) {
                   <h3 className="font-bold text-sm sm:text-[0.95rem] uppercase tracking-wide leading-tight">
                     {person.name}
                   </h3>
-                  <p className="text-xs sm:text-sm text-blue-200 font-mono">{displayId}</p>
+                  <p className="text-xs sm:text-sm text-blue-200 font-mono">{person.id ?? person.rollno ?? ""}</p>
                 </div>
               </article>
             );
           })}
         </div>
       ) : (
-        <p className="text-lg text-gray-700 text-center">
-          Alumni data for the batch of {displayYear} is not yet available.
-        </p>
+        <p className="text-lg text-gray-700 text-center">Alumni data for the batch of {displayYear} is not yet available.</p>
       )}
     </div>
   );
 }
+
 
 
 // import React from "react";
