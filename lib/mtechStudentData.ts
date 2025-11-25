@@ -1,0 +1,270 @@
+// 👈 lib/mtechStudentData.ts नाम की नई फ़ाइल बनाएँ
+
+// 1. MTech छात्र का 'Type' (ढाँचा)
+export interface MtechStudent {
+    id: number;
+    name: string;
+    supervisor: string;
+    rollNo: string;
+    email: string;
+    profileImagePath: string;
+}
+
+// 2. आपकी इमेज से लिया गया डमी डेटा
+const dummyMtechStudents: MtechStudent[] = [
+    {
+    id: 1,
+    name: "ANTIM JAIN",
+    supervisor: "Dr. Ayan Mondal",
+    rollNo: "mt2402101002",
+    email: "mt2402101002@iiti.ac.in",
+    profileImagePath: "/mtechpng/2402101002.jpg",
+},
+{
+    id: 2,
+    name: "Sachin Sharma",
+    supervisor: "Dr. Puneet Gupta",
+    rollNo: "mt2402101003",
+    email: "mt2402101003@iiti.ac.in",
+    profileImagePath: "/mtechpng/2402101003.jpg",
+},
+{
+    id: 3,
+    name: "Adarsh Mishra",
+    supervisor: "Dr. Sasank Mouli",
+    rollNo: "mt2402101004",
+    email: "mt2402101004@iiti.ac.in",
+    profileImagePath: "/mtechpng/2402101004.jpg",
+},
+{
+    id: 4,
+    name: "Mohd Aamir",
+    supervisor: "Dr. Nagendra Kumar",
+    rollNo: "mt2402101005",
+    email: "mt2402101005@iiti.ac.in",
+    profileImagePath: "/mtechpng/2402101005.jpg",
+},
+{
+    id: 5,
+    name: "Manish Solanki",
+    supervisor: "Dr. Chandresh Kumar Maurya",
+    rollNo: "mt2402101008",
+    email: "mt2402101008@iiti.ac.in",
+    profileImagePath: "/mtechpng/2402101008.jpg",
+},
+{
+    id: 6,
+    name: "Anugunj Saini",
+    supervisor: "Prof. Surya Prakash",
+    rollNo: "mt2402101009",
+    email: "mt2402101009@iiti.ac.in",
+    profileImagePath: "/mtechpng/2402101009.jpg",
+},
+{
+    id: 7,
+    name: "Rajat Tambare",
+    supervisor: "Prof. Somnath Dey",
+    rollNo: "mt2402101011",
+    email: "mt2402101011@iiti.ac.in",
+    profileImagePath: "/mtechpng/2402101011.jpg",
+},
+{
+    id: 8,
+    name: "Money Bansal",
+    supervisor: "Prof. Abhishek Srivastava",
+    rollNo: "mt2402101012",
+    email: "mt2402101012@iiti.ac.in",
+    profileImagePath: "/mtechpng/2402101012.jpeg",
+},
+{
+    id: 9,
+    name: "Bukke Roopa Sree",
+    supervisor: "Dr. Aniruddha Singh Kushwaha",
+    rollNo: "mt2402101013",
+    email: "mt2402101013@iiti.ac.in",
+    profileImagePath: "/mtechpng/2402101013.jpg",
+},
+{
+    id: 10,
+    name: "Sandip Dnyaneshwar Ambre",
+    supervisor: "Dr. Aniruddha Singh Kushwaha",
+    rollNo: "mt2402101014",
+    email: "mt2402101014@iiti.ac.in",
+    profileImagePath: "/mtechpng/2402101014.jpg",
+},
+{
+    id: 11,
+    name: "Himanshu Mishra",
+    supervisor: "Prof. Abhishek Srivastava",
+    rollNo: "mt2402101015",
+    email: "mt2402101015@iiti.ac.in",
+    profileImagePath: "/mtechpng/2402101015.jpg",
+},
+{
+    id: 12,
+    name: "Harshal Shashikant Shinde",
+    supervisor: "Prof. Gourinath Banda",
+    rollNo: "mt2402101016",
+    email: "mt2402101016@iiti.ac.in",
+    profileImagePath: "/mtechpng/2402101016.jpg",
+},
+{
+    id: 13,
+    name: "Suvash Chandra Yadav",
+    supervisor: "Dr. Ayan Mondal",
+    rollNo: "mt2402102017",
+    email: "mt2402102017@iiti.ac.in",
+    profileImagePath: "/mtechpng/2402102017.jpg",
+},
+{
+    id: 14,
+    name: "Prajwal Lamsal",
+    supervisor: "Dr. Subhra Mazumdar",
+    rollNo: "mt2402102018",
+    email: "mt2402102018@iiti.ac.in",
+    profileImagePath: "/mtechpng/2402102018.jpg",
+},
+{
+    id: 15,
+    name: "Ankit Kayastha",
+    supervisor: "Prof. Neminath Hubballi",
+    rollNo: "mt2402102019",
+    email: "mt2402102019@iiti.ac.in",
+    profileImagePath: "/mtechpng/2402102019.jpg",
+},
+{
+    id: 16,
+    name: "Ayush Kumar Pandey",
+    supervisor: "Dr. Debasish Pattanayak",
+    rollNo: "mt2502101001",
+    email: "mt2502101001@iiti.ac.in",
+    profileImagePath: "/mtechpng/2502101001.jpg",
+},
+{
+    id: 17,
+    name: "Samshrita Ghimire",
+    supervisor: "Dr. Aniruddha Singh Kushwah",
+    rollNo: "mt2502101003",
+    email: "mt2502101003@iiti.ac.in",
+    profileImagePath: "/mtechpng/2502101003.jpg",
+},
+{
+    id: 18,
+    name: "Jashkumar Sanjaybhai Dhanani",
+    supervisor: "Dr. Chandresh K. Maurya",
+    rollNo: "mt2502101004",
+    email: "mt2502101004@iiti.ac.in",
+    profileImagePath: "/mtechpng/2502101004.jpg",
+},
+{
+    id: 19,
+    name: "Kaushik Sarmah",
+    supervisor: "Dr. Subhra Mazumdar",
+    rollNo: "mt2502101005",
+    email: "mt2502101005@iiti.ac.in",
+    profileImagePath: "/mtechpng/2502101005.jpg",
+},
+{
+    id: 20,
+    name: "Mohit Arora",
+    supervisor: "Prof. Kapil Ahuja",
+    rollNo: "mt2502101006",
+    email: "mt2502101006@iiti.ac.in",
+    profileImagePath: "/mtechpng/2502101006.jpg",
+},
+{
+    id: 21,
+    name: "Mukul Hayaran",
+    supervisor: "Dr. Nagendra Kumar",
+    rollNo: "mt2502101007",
+    email: "mt2502101007@iiti.ac.in",
+    profileImagePath: "/mtechpng/2502101007.jpg",
+},
+{
+    id: 22,
+    name: "Nagendra Chouhan",
+    supervisor: "Prof. Aruna Tiwari",
+    rollNo: "mt2502101008",
+    email: "mt2502101008@iiti.ac.in",
+    profileImagePath: "/mtechpng/2502101008.jpg",
+},
+{
+    id: 23,
+    name: "Saket Jain",
+    supervisor: "Dr. Ayan Mondal",
+    rollNo: "mt2502101009",
+    email: "mt2502101009@iiti.ac.in",
+    profileImagePath: "/mtechpng/2502101009.jpg",
+},
+{
+    id: 24,
+    name: "Srishthy Agrawal",
+    supervisor: "Prof. Abhishek Srivastava",
+    rollNo: "mt2502101010",
+    email: "mt2502101010@iiti.ac.in",
+    profileImagePath: "/mtechpng/2502101010.jpg",
+},
+{
+    id: 25,
+    name: "Sudhanshu Sharma",
+    supervisor: "Dr. Sasank Mouli",
+    rollNo: "mt2502101011",
+    email: "mt2502101011@iiti.ac.in",
+    profileImagePath: "/mtechpng/2502101011.jpg",
+},
+{
+    id: 26,
+    name: "Suraj Ahirwar",
+    supervisor: "Dr. Soumi Chattopadhyay",
+    rollNo: "mt2502101012",
+    email: "mt2502101012@iiti.ac.in",
+    profileImagePath: "/mtechpng/2502101012.jpg",
+},
+{
+    id: 27,
+    name: "Utkarsh Singh Rathore",
+    supervisor: "Dr. Puneet Gupta",
+    rollNo: "mt2502101013",
+    email: "mt2502101013@iiti.ac.in",
+    profileImagePath: "/mtechpng/2502101013.jpg",
+},
+{
+    id: 28,
+    name: "Deepanshu Patil",
+    supervisor: "Prof. Somnath Dey",
+    rollNo: "mt2502101014",
+    email: "mt2502101014@iiti.ac.in",
+    profileImagePath: "/mtechpng/2502101014.jpg",
+},
+{
+    id: 29,
+    name: "KATRAVATH NAGESH",
+    supervisor: "Prof. Surya Prakash",
+    rollNo: "mt2502101015",
+    email: "mt2502101015@iiti.ac.in",
+    profileImagePath: "/mtechpng/2502101015.jpg",
+},
+{
+    id: 30,
+    name: "Rishabh Yadav",
+    supervisor: "Dr. Subhra Mazumdar",
+    rollNo: "mt2502101016",
+    email: "mt2502101016@iiti.ac.in",
+    profileImagePath: "/mtechpng/2502101016.jpg",
+},
+{
+    id: 31,
+    name: "Sagar Kumar Sah",
+    supervisor: "Prof. Abhishek Srivastava",
+    rollNo: "mt2502101018",
+    email: "mt2502101018@iiti.ac.in",
+    profileImagePath: "/mtechpng/2502101018.jpg",
+},
+
+];
+
+// 3. डेटा 'get' करने का फ़ंक्शन
+export async function getMtechStudents(): Promise<MtechStudent[]> {
+    await new Promise((resolve) => setTimeout(resolve, 100));
+    return dummyMtechStudents;
+}

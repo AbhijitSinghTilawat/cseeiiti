@@ -1,0 +1,125 @@
+// फ़ाइल: app/about/administration/page.tsx
+
+import React from 'react';
+import { Mail, Phone } from 'lucide-react'; // सुंदर आइकन्स के लिए
+
+export default function AdministrationPage() {
+    return (
+        <div className="container mx-auto px-4 py-16 max-w-6xl">
+
+            {/* --- 1. पेज का टाइटल --- */}
+            <h1 className="text-4xl font-bold text-blue-900 mb-12 text-center border-b-2 border-blue-200 pb-4">
+                Administration
+            </h1>
+
+            {/* --- 2. HOD सेक्शन --- */}
+            <div className="mb-12 bg-white p-6 rounded-lg shadow-lg border border-gray-200">
+                <h2 className="text-3xl font-semibold text-blue-800 mb-6">
+                    Head of Department
+                </h2>
+                <div className="text-lg text-gray-800">
+                    <p className="text-2xl font-bold text-gray-900">Dr. Ranveer Singh</p>
+                    <div className="flex items-center space-x-4 mt-2">
+                        <Mail className="h-5 w-5 text-blue-600" />
+                        <a href="mailto:hodcse@iiti.ac.in" className="text-gray-700 hover:text-blue-600">
+                            hodcse@iiti.ac.in
+                        </a>
+                    </div>
+                    <div className="flex items-center space-x-4 mt-2">
+                        <Phone className="h-5 w-5 text-blue-600" />
+                        <span className="text-gray-700">+91-731-6603224</span>
+                    </div>
+                    <div className="flex items-center space-x-4 mt-2">
+                        <Phone className="h-5 w-5 text-blue-600" />
+                        <span className="text-gray-700">Office of Head: +91-731-6603503</span>
+                    </div>
+                </div>
+            </div>
+
+            {/* --- 3. कमेटीज़ और को-ऑर्डिनेटर्स के लिए ग्रिड --- */}
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                {/* PG Committee */}
+                <div className="bg-white p-6 rounded-lg shadow-lg border border-gray-200">
+                    <h3 className="text-2xl font-semibold text-blue-800 mb-4">
+                        Post-Graduate Committee
+                    </h3>
+                    <ul className="list-disc list-inside space-y-2 text-gray-700">
+                        <li>Dr. Soumi Chattopadhyay (Convenor)</li>
+                        <li>Prof. Anirban Sengupta (Member)</li>
+                        <li>Prof. Surya Prakash (Member)</li>
+                        <li>Dr. Aniruddha Singh Kushwahai (Member)</li>
+                        <li>HOD, CSE (Ex-officio)</li>
+                    </ul>
+                </div>
+
+                {/* UG Committee */}
+                <div className="bg-white p-6 rounded-lg shadow-lg border border-gray-200">
+                    <h3 className="text-2xl font-semibold text-blue-800 mb-4">
+                        Under-Graduate Committee
+                    </h3>
+                    <ul className="list-disc list-inside space-y-2 text-gray-700">
+                        <li>Dr. Ayan Mondal (Convenor)</li>
+                        <li>Dr. Puneet Gupta (Member)</li>
+                        <li>Dr. Sasank Mouli (Member)</li>
+                        <li>Dr. Debasish Pattanayak (Member)</li>
+                        <li>HOD, CSE (Ex-officio)</li>
+                    </ul>
+                </div>
+
+                {/* Safety and Security Committee */}
+                <div className="bg-white p-6 rounded-lg shadow-lg border border-gray-200">
+                    <h3 className="text-2xl font-semibold text-blue-800 mb-4">
+                        Safety and Security Committee
+                    </h3>
+                    <ul className="list-disc list-inside space-y-2 text-gray-700">
+                        <li>Dr. Bodhisatwa Mazumdar (Convenor)</li>
+                        <li>Prof. Abhishek Srivastava (Member)</li>
+                        <li>Dr. Puneet Gupta (Member)</li>
+                    </ul>
+                </div>
+
+                {/* PhD Coordinator */}
+                <div className="bg-white p-6 rounded-lg shadow-lg border border-gray-200">
+                    <h3 className="text-2xl font-semibold text-blue-800 mb-4">
+                        Ph.D. Admission Coordinator
+                    </h3>
+                    <p className="text-gray-700">Dr. Lawqueen Kanesh</p>
+                </div>
+
+                {/* MS Coordinator */}
+                <div className="bg-white p-6 rounded-lg shadow-lg border border-gray-200">
+                    <h3 className="text-2xl font-semibold text-blue-800 mb-4">
+                        MS (Research) Co-ordinator
+                    </h3>
+                    <p className="text-gray-700">Dr. Chandresh Kumar Maurya</p>
+                </div>
+
+                {/* MTech Coordinator */}
+                <div className="bg-white p-6 rounded-lg shadow-lg border border-gray-200">
+                    <h3 className="text-2xl font-semibold text-blue-800 mb-4">
+                        M.Tech. Co-ordinator
+                    </h3>
+                    <p className="text-gray-700">Dr. Subhra Mazumdar</p>
+                </div>
+
+                {/* Outreach Coordinator */}
+                <div className="bg-white p-6 rounded-lg shadow-lg border border-gray-200">
+                    <h3 className="text-2xl font-semibold text-blue-800 mb-4">
+                        Outreach Co-ordinator
+                    </h3>
+                    <p className="text-gray-700">Dr. Chandresh Kumar Maurya</p>
+                </div>
+
+                {/* Placement Coordinator */}
+                <div className="bg-white p-6 rounded-lg shadow-lg border border-gray-200">
+                    <h3 className="text-2xl font-semibold text-blue-800 mb-4">
+                        Placement Co-ordinator
+                    </h3>
+                    <p className="text-gray-700">Dr. Chandresh Kumar Maurya</p>
+                </div>
+
+            </div>
+        </div>
+    );
+}
