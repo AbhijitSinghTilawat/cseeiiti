@@ -1,16 +1,12 @@
 // app/people/alumni/btech/[year]/page.tsx
 import React from "react";
-import Image from "next/image";
 import Link from "next/link";
 import { allAlumniData } from "@/lib/alumniData";
 
 type Props = {
-  params: {
-    year: string | undefined | null;
-  } | Promise<{ year: string | undefined | null }>;
+  params: { year: string | undefined | null } | Promise<{ year: string | undefined | null }>;
 };
 
-// helper: normalize + encode image path
 function normalizeImgPath(raw?: string | null, placeholder = "/png/avatar-placeholder.png") {
   if (!raw) return placeholder;
   const withLeading = raw.startsWith("/") ? raw : `/${raw}`;
@@ -22,16 +18,13 @@ function normalizeImgPath(raw?: string | null, placeholder = "/png/avatar-placeh
 }
 
 export default async function BTechAlumniYearPage({ params }: Props) {
-  // unwrap params safely (Next.js may provide params as a Promise in some cases)
+  // unwrap params (Next.js may pass params as Promise)
   const { year } = (await params) ?? { year: undefined };
-
-  // If year is missing, show empty list
   const safeYear = typeof year === "string" ? year : "";
 
-  // cast allAlumniData to an indexable record so TS allows dynamic indexing
+  // <-- IMPORTANT: cast to indexable record so TS allows dynamic indexing
   const alumniRaw = (allAlumniData as Record<string, any[]>)[safeYear] ?? [];
 
-  // ensure it's an array and sort safely
   const alumni = Array.isArray(alumniRaw)
     ? alumniRaw.slice().sort((a, b) => ((a?.name ?? "") as string).localeCompare((b?.name ?? "") as string))
     : [];
@@ -59,9 +52,10 @@ export default async function BTechAlumniYearPage({ params }: Props) {
 
       {alumni.length > 0 ? (
         <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-4 sm:gap-6 lg:gap-8 justify-items-center">
-          {alumni.map((person: any) => {
+          {alumni.map((person: any, idx: number) => {
             const imgSrc = normalizeImgPath(person.imageUrl ?? person.img ?? person.image ?? placeholder, placeholder);
-            const id = person.id ?? person.rollno ?? person.name ?? Math.random().toString(36).slice(2, 9);
+            const id = person.id ?? person.rollno ?? person.name ?? `al-${idx}`;
+
             return (
               <article
                 key={id}
@@ -70,8 +64,6 @@ export default async function BTechAlumniYearPage({ params }: Props) {
               >
                 <div className="flex flex-col items-center justify-center pt-6 pb-4 bg-white">
                   <div className="relative w-28 h-28 sm:w-32 sm:h-32 rounded-md overflow-hidden">
-                    {/* using plain img instead of next/image if filenames cause runtime issues;
-                        If you prefer next/image, you can swap, but make sure domains / loader config is set. */}
                     <img src={imgSrc} alt={person.name} className="object-cover w-full h-full" />
                   </div>
                 </div>
@@ -92,7 +84,6 @@ export default async function BTechAlumniYearPage({ params }: Props) {
     </div>
   );
 }
-
 
 
 // import React from "react";
