@@ -8,13 +8,14 @@ type Props = {
 };
 
 /**
- * Ensure image path always has a leading slash and is safe to use.
+ * Ensure image path starts with a leading slash and is safe for use in <img src>.
+ * Returns placeholder when input is falsy or encoding fails.
  */
 function normalizeImgPath(raw?: string | null, placeholder = "/png/avatar-placeholder.png") {
   if (!raw) return placeholder;
   const withLeading = raw.startsWith("/") ? raw : `/${raw}`;
   try {
-    // encodeURI to prevent weird chars breaking src
+    // encodeURI so spaces and special chars don't break src
     return encodeURI(withLeading);
   } catch {
     return placeholder;
@@ -22,13 +23,14 @@ function normalizeImgPath(raw?: string | null, placeholder = "/png/avatar-placeh
 }
 
 export default async function BTechAlumniYearPage({ params }: Props) {
-  // unwrap params because Next may pass params as a Promise in the app router
+  // Next.js may pass params as a Promise in some contexts — unwrap safely
   const { year } = (await params) ?? { year: undefined };
   const safeYear = typeof year === "string" ? year : "";
 
-  // cast allAlumniData to an indexable record so TS allows dynamic indexing
+  // Type-safe indexing: cast to indexable Record so TS allows dynamic keys
   const alumniRaw = (allAlumniData as Record<string, any[]>)[safeYear] ?? [];
 
+  // Ensure we have an array, then sort by name (safely)
   const alumni = Array.isArray(alumniRaw)
     ? alumniRaw.slice().sort((a, b) => ((a?.name ?? "") as string).localeCompare((b?.name ?? "") as string))
     : [];
@@ -68,10 +70,19 @@ export default async function BTechAlumniYearPage({ params }: Props) {
               >
                 <div className="flex flex-col items-center justify-center pt-6 pb-4 bg-white">
                   <div className="relative w-28 h-28 sm:w-32 sm:h-32 rounded-md overflow-hidden">
-                    {/* Using plain <img> here because this is a server component and onError handlers are client-only.
-                        If you want client-side fallback behavior, convert this file to a "use client" component or
-                        create a small client component for the image. */}
-                    <img src={imgSrc} alt={person.name ?? "Alumnus"} className="object-cover w-full h-full" />
+                    {/* Use plain <img> to avoid Next Image validation issues with dynamic/outside paths */}
+                    <img
+                      src={imgSrc}
+                      alt={person.name ?? "Alumnus"}
+                      className="object-cover w-full h-full"
+                      onError={(e) => {
+                        const target = e.currentTarget as HTMLImageElement;
+                        if (!target.dataset.fallback) {
+                          target.src = placeholder;
+                          target.dataset.fallback = "1";
+                        }
+                      }}
+                    />
                   </div>
                 </div>
 
