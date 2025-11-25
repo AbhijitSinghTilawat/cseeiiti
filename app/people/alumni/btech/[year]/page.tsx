@@ -7,10 +7,14 @@ type Props = {
   params: { year: string | undefined | null } | Promise<{ year: string | undefined | null }>;
 };
 
+/**
+ * Ensure image path always has a leading slash and is safe to use.
+ */
 function normalizeImgPath(raw?: string | null, placeholder = "/png/avatar-placeholder.png") {
   if (!raw) return placeholder;
   const withLeading = raw.startsWith("/") ? raw : `/${raw}`;
   try {
+    // encodeURI to prevent weird chars breaking src
     return encodeURI(withLeading);
   } catch {
     return placeholder;
@@ -18,11 +22,12 @@ function normalizeImgPath(raw?: string | null, placeholder = "/png/avatar-placeh
 }
 
 export default async function BTechAlumniYearPage({ params }: Props) {
+  // unwrap params because Next may pass params as a Promise in the app router
   const { year } = (await params) ?? { year: undefined };
   const safeYear = typeof year === "string" ? year : "";
 
-  // <-- change is here: cast allAlumniData to `any` before indexing
-  const alumniRaw = (allAlumniData as any)[safeYear] ?? [];
+  // cast allAlumniData to an indexable record so TS allows dynamic indexing
+  const alumniRaw = (allAlumniData as Record<string, any[]>)[safeYear] ?? [];
 
   const alumni = Array.isArray(alumniRaw)
     ? alumniRaw.slice().sort((a, b) => ((a?.name ?? "") as string).localeCompare((b?.name ?? "") as string))
@@ -59,19 +64,24 @@ export default async function BTechAlumniYearPage({ params }: Props) {
               <article
                 key={id}
                 className="flex flex-col bg-white rounded-2xl shadow-xl overflow-hidden border border-gray-200 transition-transform duration-300 hover:scale-105 w-full max-w-[190px] sm:max-w-[220px]"
-                aria-label={`Alumnus ${person.name}`}
+                aria-label={`Alumnus ${person.name ?? "Alumnus"}`}
               >
                 <div className="flex flex-col items-center justify-center pt-6 pb-4 bg-white">
                   <div className="relative w-28 h-28 sm:w-32 sm:h-32 rounded-md overflow-hidden">
-                    <img src={imgSrc} alt={person.name} className="object-cover w-full h-full" />
+                    {/* Using plain <img> here because this is a server component and onError handlers are client-only.
+                        If you want client-side fallback behavior, convert this file to a "use client" component or
+                        create a small client component for the image. */}
+                    <img src={imgSrc} alt={person.name ?? "Alumnus"} className="object-cover w-full h-full" />
                   </div>
                 </div>
 
                 <div className="bg-blue-900 text-white px-3 py-3 text-center flex flex-col justify-center gap-1 min-h-[90px]">
                   <h3 className="font-bold text-sm sm:text-[0.95rem] uppercase tracking-wide leading-tight">
-                    {person.name}
+                    {person.name ?? "Unnamed"}
                   </h3>
-                  <p className="text-xs sm:text-sm text-blue-200 font-mono">{person.id ?? person.rollno ?? ""}</p>
+                  <p className="text-xs sm:text-sm text-blue-200 font-mono">
+                    {person.id ?? person.rollno ?? ""}
+                  </p>
                 </div>
               </article>
             );
@@ -82,4 +92,4 @@ export default async function BTechAlumniYearPage({ params }: Props) {
       )}
     </div>
   );
-} 
+}
