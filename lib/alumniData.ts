@@ -1,5 +1,19 @@
-// /lib/alumniData.ts
-export const allAlumniData = {
+type AlumniPerson = {
+  id?: string;
+  name: string;
+  imageUrl?: string;
+  img?: string;
+  rollno?: string;
+  supervisor?: string;
+  profileLink?: string;
+  yearOfGraduation?: string;
+  specialization?: string;
+  thesisTitle?: string;
+  // add other optional fields you have
+};
+
+// फिर export के समय:
+export const allAlumniData: Record<string, AlumniPerson[]> = {
   "2021-25": [
     { id: '210001002', name: 'ABHINAV KUMAR', imageUrl: '/alumini/2021-25/210001002.jpg' },
     { id: '210001003', name: 'AMBER DESHBHRATAR', imageUrl: '/alumini/2021-25/210001003.jpg' },

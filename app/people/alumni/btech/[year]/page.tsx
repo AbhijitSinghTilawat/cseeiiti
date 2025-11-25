@@ -3,12 +3,28 @@ import React from "react";
 import Link from "next/link";
 import { allAlumniData } from "@/lib/alumniData";
 
+type AlumniPerson = {
+  id?: string;
+  name?: string;
+  imageUrl?: string;
+  img?: string;
+  image?: string;
+  rollno?: string;
+  supervisor?: string;
+  profileLink?: string;
+  yearOfGraduation?: string;
+  specialization?: string;
+  thesisTitle?: string;
+  // add other optional fields if present in your data
+};
+
 type Props = {
   params: { year: string | undefined | null } | Promise<{ year: string | undefined | null }>;
 };
 
 function normalizeImgPath(raw?: string | null, placeholder = "/png/avatar-placeholder.png") {
   if (!raw) return placeholder;
+  // ensure leading slash and encode URI to handle spaces/parentheses etc.
   const withLeading = raw.startsWith("/") ? raw : `/${raw}`;
   try {
     return encodeURI(withLeading);
@@ -18,16 +34,16 @@ function normalizeImgPath(raw?: string | null, placeholder = "/png/avatar-placeh
 }
 
 export default async function BTechAlumniYearPage({ params }: Props) {
-  // unwrap params (Next.js may pass params as Promise)
+  // Next.js may pass params as a Promise — unwrap safely
   const { year } = (await params) ?? { year: undefined };
   const safeYear = typeof year === "string" ? year : "";
 
-  // <-- IMPORTANT: cast to indexable record so TS allows dynamic indexing
-  const alumniRaw = (allAlumniData as Record<string, any[]>)[safeYear] ?? [];
+  // Tell TS that allAlumniData is indexable by string -> AlumniPerson[]
+  const alumniRaw = (allAlumniData as Record<string, AlumniPerson[]>)[safeYear] ?? [];
 
   const alumni = Array.isArray(alumniRaw)
     ? alumniRaw.slice().sort((a, b) => ((a?.name ?? "") as string).localeCompare((b?.name ?? "") as string))
-    : [];
+    : ([] as AlumniPerson[]);
 
   const displayYear = safeYear ? safeYear.replace(/-/g, "–") : "Unknown";
   const placeholder = "/png/avatar-placeholder.png";
@@ -52,25 +68,26 @@ export default async function BTechAlumniYearPage({ params }: Props) {
 
       {alumni.length > 0 ? (
         <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-4 sm:gap-6 lg:gap-8 justify-items-center">
-          {alumni.map((person: any, idx: number) => {
+          {alumni.map((person: AlumniPerson, idx: number) => {
             const imgSrc = normalizeImgPath(person.imageUrl ?? person.img ?? person.image ?? placeholder, placeholder);
-            const id = person.id ?? person.rollno ?? person.name ?? `al-${idx}`;
+            const id = person.id ?? person.rollno ?? `${person.name ?? "al"}-${idx}`;
 
             return (
               <article
                 key={id}
                 className="flex flex-col bg-white rounded-2xl shadow-xl overflow-hidden border border-gray-200 transition-transform duration-300 hover:scale-105 w-full max-w-[190px] sm:max-w-[220px]"
-                aria-label={`Alumnus ${person.name}`}
+                aria-label={`Alumnus ${person.name ?? "Alumnus"}`}
               >
                 <div className="flex flex-col items-center justify-center pt-6 pb-4 bg-white">
                   <div className="relative w-28 h-28 sm:w-32 sm:h-32 rounded-md overflow-hidden">
-                    <img src={imgSrc} alt={person.name} className="object-cover w-full h-full" />
+                    {/* Server component: use plain <img> to avoid client-only handlers */}
+                    <img src={imgSrc} alt={person.name ?? "Alumnus"} className="object-cover w-full h-full" />
                   </div>
                 </div>
 
                 <div className="bg-blue-900 text-white px-3 py-3 text-center flex flex-col justify-center gap-1 min-h-[90px]">
                   <h3 className="font-bold text-sm sm:text-[0.95rem] uppercase tracking-wide leading-tight">
-                    {person.name}
+                    {person.name ?? "Unnamed"}
                   </h3>
                   <p className="text-xs sm:text-sm text-blue-200 font-mono">{person.id ?? person.rollno ?? ""}</p>
                 </div>
@@ -84,7 +101,6 @@ export default async function BTechAlumniYearPage({ params }: Props) {
     </div>
   );
 }
-
 
 // import React from "react";
 // import Image from "next/image";
