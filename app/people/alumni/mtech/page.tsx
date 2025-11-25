@@ -1,63 +1,92 @@
-﻿import { allAlumniData } from "@/lib/alumniData";
+﻿"use client";
+
+import React, { useState } from "react";
+import { allAlumniData } from "@/lib/alumniData";
+
+/**
+ * Small client-side image component that uses an onError handler safely
+ * (must be in a Client Component).
+ */
+function ImageWithFallback({ src, alt, className, fallback }) {
+  const [currentSrc, setCurrentSrc] = useState(src || fallback);
+
+  return (
+    <img
+      src={currentSrc}
+      alt={alt}
+      className={className}
+      onError={() => {
+        if (currentSrc !== fallback) setCurrentSrc(fallback);
+      }}
+    />
+  );
+}
 
 export default function GraduatedMTechPage() {
-    const alumni = allAlumniData.graduatedMTech;
+  const alumni = allAlumniData.graduatedMTech || [];
 
-    return (
-        <div className="p-10">
-            <h1 className="text-3xl font-bold text-blue-900">Graduated MTech Alumni</h1>
+  // Put a default fallback image file at: public/alumini/default-avatar.jpg
+  const FALLBACK = "/alumini/default-avatar.jpg";
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mt-8">
-                {alumni.map((person) => (
-                    <div key={person.rollno} className="bg-white shadow-lg rounded-xl p-4 text-center border border-gray-200">
-                        <img
-                            src={person.imageUrl}
-                            className="w-32 h-32 mx-auto rounded-full object-cover"
-                            alt={person.name}
-                        />
+  return (
+    <div className="p-10">
+      <h1 className="text-3xl font-bold text-blue-900">Graduated MTech Alumni</h1>
 
-                        <h3 className="font-bold mt-4 text-lg">{person.name}</h3>
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mt-8">
+        {alumni.map((person) => {
+          // support multiple possible fields used across your data
+          const src = person.imageUrl || person.img || person.image || FALLBACK;
 
-                        {/* Roll No */}
-                        <p className="text-sm text-gray-700 mt-1">
-                            <span className="font-semibold">Roll No:</span> {person.rollno}
-                        </p>
+          return (
+            <div
+              key={person.rollno}
+              className="bg-white shadow-lg rounded-xl p-4 text-center border border-gray-200"
+            >
+              <ImageWithFallback
+                src={src}
+                fallback={FALLBACK}
+                alt={person.name || "Alumni"}
+                className="w-32 h-32 mx-auto rounded-full object-cover"
+              />
 
-                        {/* Specialization */}
-                        {person.specialization && (
-                            <p className="text-sm text-gray-700 mt-1">
-                                <span className="font-semibold">Specialization:</span> {person.specialization}
-                            </p>
-                        )}
+              <h3 className="font-bold mt-4 text-lg">{person.name}</h3>
 
-                        {/* Supervisor */}
-                        {person.supervisor && (
-                            <p className="text-sm text-gray-700 mt-1">
-                                <span className="font-semibold">Supervisor:</span> {person.supervisor}
-                            </p>
-                        )}
+              <p className="text-sm text-gray-700 mt-1">
+                <span className="font-semibold">Roll No:</span> {person.rollno}
+              </p>
 
-                        {/* Year of Graduation */}
-                        {person.yearOfGraduation && (
-                            <p className="text-sm text-gray-700 mt-1">
-                                <span className="font-semibold">Graduation Year:</span> {person.yearOfGraduation}
-                            </p>
-                        )}
+              {person.specialization && (
+                <p className="text-sm text-gray-700 mt-1">
+                  <span className="font-semibold">Specialization:</span> {person.specialization}
+                </p>
+              )}
 
-                        {/* Profile Link */}
-                        {person.profileLink && (
-                            <a
-                                href={person.profileLink}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="inline-block mt-3 px-3 py-1 bg-blue-600 text-white text-sm rounded-md hover:bg-blue-700 transition"
-                            >
-                                View Profile
-                            </a>
-                        )}
-                    </div>
-                ))}
+              {person.supervisor && (
+                <p className="text-sm text-gray-700 mt-1">
+                  <span className="font-semibold">Supervisor:</span> {person.supervisor}
+                </p>
+              )}
+
+              {person.yearOfGraduation && (
+                <p className="text-sm text-gray-700 mt-1">
+                  <span className="font-semibold">Graduation Year:</span> {person.yearOfGraduation}
+                </p>
+              )}
+
+              {person.profileLink && (
+                <a
+                  href={person.profileLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block mt-3 px-3 py-1 bg-blue-600 text-white text-sm rounded-md hover:bg-blue-700 transition"
+                >
+                  View Profile
+                </a>
+              )}
             </div>
-        </div>
-    );
+          );
+        })}
+      </div>
+    </div>
+  );
 }

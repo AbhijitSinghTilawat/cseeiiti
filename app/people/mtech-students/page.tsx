@@ -1,62 +1,71 @@
-import { allAlumniData } from "@/lib/alumniData";
+// 👈 app/mtech-students/page.tsx (नई पेज फ़ाइल)
 
-export default function GraduatedMTechPage() {
-    const alumni = allAlumniData.graduatedMTech;
+import { getMtechStudents } from "@/lib/mtechStudentData"; // 👈 नई डेटा फ़ाइल से इम्पोर्ट करें
+
+export default async function MtechStudentsPage() { // 👈 पेज का नाम बदला
+    const mtechStudents = await getMtechStudents(); // 👈 नया फ़ंक्शन कॉल करें
 
     return (
-        <div className="p-10">
-            <h1 className="text-3xl font-bold text-blue-900">Graduated MTech Alumni</h1>
+        <div className="p-6 bg-gray-50 min-h-screen">
+            <div className="container mx-auto">
+                <h1 className="text-4xl font-extrabold text-gray-900 border-b-4 border-indigo-600 pb-2 mb-8">
+                    👨‍💻 MTech Students {/* 👈 टाइटल बदला */}
+                </h1>
+                <p className="text-lg text-gray-700 mb-10">
+                    Meet our talented MTech (Master of Technology) students. {/* 👈 टेक्स्ट बदला */}
+                </p>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mt-8">
-                {alumni.map((person) => (
-                    <div key={person.rollno} className="bg-white shadow-lg rounded-xl p-4 text-center border border-gray-200">
-                        <img
-                            src={person.imageUrl}
-                            className="w-32 h-32 mx-auto rounded-full object-cover"
-                            alt={person.name}
-                        />
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    {mtechStudents.map((student) => ( // 👈 mtechStudents वैरिएबल
+                        <div
+                            key={student.id}
+                            className="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition duration-500 transform hover:scale-[1.02] flex flex-col items-center text-center"
+                        >
+                            <img
+                                src={
+                                    student.profileImagePath ||
+                                    "https://placehold.co/150x150/cccccc/000000?text=NA"
+                                }
+                                alt={student.name}
+                                // 👇 इसे चौकोर (rounded-lg) कर दिया है, आपकी इमेज की तरह
+                                className="w-40 h-40 rounded-lg mb-4 object-cover border-4 border-indigo-200"
+                            />
 
-                        <h3 className="font-bold mt-4 text-lg">{person.name}</h3>
+                            <h2 className="text-2xl font-bold text-indigo-700 mb-1">
+                                {student.name}
+                            </h2>
 
-                        {/* Roll No */}
-                        <p className="text-sm text-gray-700 mt-1">
-                            <span className="font-semibold">Roll No:</span> {person.rollno}
-                        </p>
-
-                        {/* Specialization */}
-                        {person.specialization && (
-                            <p className="text-sm text-gray-700 mt-1">
-                                <span className="font-semibold">Specialization:</span> {person.specialization}
-                            </p>
-                        )}
-
-                        {/* Supervisor */}
-                        {person.supervisor && (
-                            <p className="text-sm text-gray-700 mt-1">
-                                <span className="font-semibold">Supervisor:</span> {person.supervisor}
-                            </p>
-                        )}
-
-                        {/* Year of Graduation */}
-                        {person.yearOfGraduation && (
-                            <p className="text-sm text-gray-700 mt-1">
-                                <span className="font-semibold">Graduation Year:</span> {person.yearOfGraduation}
-                            </p>
-                        )}
-
-                        {/* Profile Link */}
-                        {person.profileLink && (
-                            <a
-                                href={person.profileLink}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="inline-block mt-3 px-3 py-1 bg-blue-600 text-white text-sm rounded-md hover:bg-blue-700 transition"
+                            {/* 👇 स्क्रॉल होने वाला हिस्सा */}
+                            <div
+                                // 👇 ये दो क्लास स्क्रॉलिंग के लिए हैं
+                                className="space-y-2 w-full text-left mt-4 overflow-y-auto max-h-48 p-2"
                             >
-                                View Profile
-                            </a>
-                        )}
-                    </div>
-                ))}
+                                <p className="text-gray-800">
+                                    <span className="font-medium">Supervisor:</span>{" "}
+                                    {student.supervisor}
+                                </p>
+                                
+                                <p className="text-gray-800">
+                                    <span className="font-medium">Roll-No:</span>{" "}
+                                    {student.rollNo}
+                                </p>
+                                
+                                
+                                <p className="text-gray-800">
+                                    <span className="font-medium">Email:</span>{" "}
+                                    <a
+                                        href={`mailto:${student.email}`}
+                                        className="text-blue-600 hover:underline block break-all"
+                                    >
+                                        {student.email}
+                                    </a>
+                                </p>
+                            </div>
+
+                            {/* 'View Full Profile' बटन हटा दिया गया है */}
+                        </div>
+                    ))}
+                </div>
             </div>
         </div>
     );
